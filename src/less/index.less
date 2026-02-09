@@ -8,8 +8,8 @@
   justify-content: center;
   text-align: center;
   padding: 15px;
-  margin-left: -60px;
-  margin-right: -60px;
+  margin-left: -200px;
+  margin-right: -200px;
 
   &__bg{
 
@@ -158,10 +158,10 @@
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  margin-left: -60px;
-  margin-right: -50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-left: -200px;
+  margin-right: -200px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 30px;
@@ -189,40 +189,34 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 32%;
+  width: 50%;
 }
 
 .price {
   background-image: url("/img/back1.png");
   background-repeat: no-repeat;
-  min-height: 400px;
   background-size: cover;
-  box-sizing: border-box;
   padding-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-bottom: 50px;
 
-
-
-  &_black {
+ &_black {
     background-image: url("/img/back2.png");
   }
 
   &__title {
     margin-bottom: 0;
-    font-size: 23px;
+    font-size: 25px;
   }
 
   &__info {
     margin-top: 0;
-    font-size: 20px;
+    font-size: 23px;
   }
 
   &__price {
     font-family: 'Cormorant SC';
     color: #fc96ff;
-    font-size: 23px;
+    font-size: 25px;
     margin-top: 70px;
 
     &_yellow{
@@ -233,18 +227,18 @@
   &__bonus {
     font-style: italic;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 80px;
   }
 }
 
 .promo {
   background-color: #525064;
-  margin-left: -60px;
-  margin-right: -60px;
+  margin-left: -200px;
+  margin-right: -200px;
   font-family: 'Cormorant SC';
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
   padding-bottom: 20px;
 
 }
@@ -273,8 +267,6 @@
 
 .promo-condition {
 
-  margin-right: 20px;
-  margin-left: 20px;
 
   &__wrap {
     display: flex;
@@ -312,7 +304,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   background-image: url("/img/tarot.png");
-  background-size: 60%;
+  background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -326,13 +318,13 @@
   align-items: center;
   background-color: rgba(82, 80, 100, 0.6);
   border-radius: 30px;
-  width: 30%;
+  width: 50%;
   border: 2px solid;
   border-color: #D6D4B4;
   padding-bottom: 40px;
 
   &_contacts {
-    width: 60%;
+    width: 70%;
   }
 
 }
@@ -352,20 +344,22 @@
   &__txt {
     font-size: 18px;
     color: #fc96ff;
+    margin-bottom: 10px;
   }
 
   &__data {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 8px;
-    align-self: flex-start;
+    display: flex;
+    align-content: flex-start;
   }
 
   &__input {
     border: none;
     border-radius: 50px;
     background-color: rgba(214, 212, 180, 0.5);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: 25px;
     padding-left: 25px;
     width: 80%;
@@ -386,6 +380,7 @@
     height: 70px;
     margin-top: 5px;
     margin-bottom: 5px;
+    resize: none;
 
     &_contacts {
       height: 120px;
@@ -394,12 +389,18 @@
   }
 }
 
+.form-group {
+  width: 90%;
+  align-content: flex-start;
+
+}
+
 .reviews {
   background-color: #525064;
-  margin-left: -60px;
-  margin-right: -60px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-left: -200px;
+  margin-right: -200px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -473,30 +474,57 @@
   background-color: rgba(214, 212, 180, 0.2);
   border-radius: 20px;
   margin-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  width: 80%;
+ flex-direction: column;
+  width:  100%;
+  cursor: pointer;
 
   &__plus {
     width: 30px;
+    justify-content: flex-end;
+  }
+
+  &__txt {
+    font-size: 23px;
+  }
+
+  &__answer {
+    font-family: 'Cormorant';
+    font-size: 22px;
+    color: white;
+
+    &_pink {
+      color: #ed94e3;
+    }
+
+    &_italic {
+      font-style: italic;
+      font-weight: bold;
+    }
   }
 }
 
+.question-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
 .contacts-wrap {
   margin-top: 20px;
-  margin-left: -60px;
-  margin-right: -60px;
+  margin-left: -200px;
+  margin-right: -200px;
   background-color: #525064;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
 
 
 
@@ -514,7 +542,7 @@
   width: 40%;
 
   &__img {
-    width: 100%
+    width: 110%
 
   }
 
@@ -529,6 +557,7 @@
 
   &__tg {
     margin-bottom: 20px;
+    font-size: 23px;
 
     a {
       text-decoration: none;
@@ -574,6 +603,10 @@ align-content: center;
 
 &__img {
     width: 45px;
+
+  &_phone {
+    width: 32px;
+  }
   }
 
   &__txt {

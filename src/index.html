@@ -160,14 +160,27 @@
             <div class="form-info">
                 <h3 class="title title_form">ЗАПОЛНИ ФОРМУ</h3>
                 <span class="form-info__txt">получи ответ на вопрос бесплатно</span>
-                <span class="form-info__data">Имя:</span>
-                <input class="form-info__input" type="text">
-                <span class="form-info__data">Телефон:</span>
-                <input class="form-info__input" type="tel">
-                <span class="form-info__data">E-mail:</span>
-                <input class="form-info__input"  type="email">
-                <span class="form-info__data">Вопрос:</span>
-                <textarea class="form-info__message" name="message" id="" cols="30" rows="10"></textarea>
+
+                <div class="form-group">
+                    <label class="form-info__data" for="name">Имя:</label>
+                    <input type="text" class="form-info__input" name="name" id="name" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                <label class="form-info__data" for="phone">Телефон:</label>
+                <input type="tel" class="form-info__input" name="phone" id="phone" autocomplete="tel" >
+                </div>
+
+                <div class="form-group">
+                <label class="form-info__data" for="email">E-mail:</label>
+                <input type="email" class="form-info__input" name="email" id="email" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-info__data" for="message">Вопрос:</label>
+                    <textarea class="form-info__message" name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
             </div>
             <span class="btn btn_form">ЗАДАТЬ ВОПРОС</span>
         </form>
@@ -208,23 +221,33 @@
 
     <h3 class="title">ОТВЕТЫ НА ВОПРОСЫ</h3>
     <div class="answers">
+
         <div class="question">
-            <span class="question__txt">КАК ПРОХОДИТ КОНСУЛЬТАЦИЯ ТАРОЛОГА?</span>
-            <svg class="question__plus" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_129_135)">
-                    <path d="M35 14.7002V55.3002" stroke="#F6EE5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M35 68.1338C53.2993 68.1338 68.1338 53.2993 68.1338 35C68.1338 16.7007 53.2993 1.86621 35 1.86621C16.7007 1.86621 1.8662 16.7007 1.8662 35C1.8662 53.2993 16.7007 68.1338 35 68.1338Z" stroke="#ED94E3" stroke-width="2"/>
-                    <path d="M55.3 35H14.7" stroke="#F6EE5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                    <clipPath id="clip0_129_135">
-                        <rect width="70" height="70" fill="white"/>
-                    </clipPath>
-                </defs>
-            </svg>
+            <div class="question-wrap">
+                <span class="question__txt">КАК ПРОХОДИТ КОНСУЛЬТАЦИЯ ТАРОЛОГА?</span>
+                <svg class="question__plus" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_129_135)">
+                        <path d="M35 14.7002V55.3002" stroke="#F6EE5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35 68.1338C53.2993 68.1338 68.1338 53.2993 68.1338 35C68.1338 16.7007 53.2993 1.86621 35 1.86621C16.7007 1.86621 1.8662 16.7007 1.8662 35C1.8662 53.2993 16.7007 68.1338 35 68.1338Z" stroke="#ED94E3" stroke-width="2"/>
+                        <path d="M55.3 35H14.7" stroke="#F6EE5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_129_135">
+                            <rect width="70" height="70" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="question__answer">
+<p>Консультация со мной проходит онлайн в любом удобном мессенджере. Ты присылаешь свои вопросы, личные данные (имя, дату рождения, фото), чтобы я могла настроиться на твою энергию.</p>
+                <p class="question__answer_pink">А я делаю личный расклад на картах Таро или рунах, фокусируясь на твоем запросе. Тебе я высылаю фотографию расклада и четкие структурированные ответы на вопросы (в аудио или в текстовом формате).</p>
+                <p>Ты получишь понятный разбор ситуации от истоков до возможного финала, а также вектор — куда двигаться дальше, чтобы прийти к нужному результату. Разумеется, всё конфиденциально.</p>
+            </div>
         </div>
 
         <div class="question">
+            <div class="question-wrap">
             <span class="question__txt">РАСКЛАД ПЛАТНЫЙ?</span>
             <svg class="question__plus" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_129_135)">
@@ -238,9 +261,17 @@
                     </clipPath>
                 </defs>
             </svg>
+            </div>
+
+            <div class="question__answer">
+                <p>Да, всё верно. Расклад на картах Таро, рунах - для таролога такая же работа, как и для других специалистов. Сколько стоят услуги - можешь посмотреть в разделе “Услуги и цены”.</p>
+                <p class="question__answer_pink">Ты инвестируешь не в гадание, а в возможность детально разобраться в своей ситуации. А значит - в своё спокойствие и комфорт.</p>
+                <p>А, для тех, кто хочет обратиться за раскладом, но сомневается я даю возможность задать бесплатный вопрос.</p>
+            </div>
         </div>
 
         <div class="question">
+            <div class="question-wrap">
             <span class="question__txt">КАКИЕ ВОПРОСЫ ЗАДАТЬ ТАРОЛОГУ?</span>
             <svg class="question__plus" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_129_135)">
@@ -254,9 +285,18 @@
                     </clipPath>
                 </defs>
             </svg>
+            </div>
+
+            <div class="question__answer">
+                <p>Карты Таро и руны - это не просто инструмент для предсказаний, но и мост, ведущий в глубины подсознания. С их помощью можно заглянуть в прошлое, чтобы разобраться в причинах, осознать настоящее и отследить возможные сценарии будущего. Каждый таролог предсказывает, опираясь на запрос клиента. Поэтому важно правильно формулировать свои вопросы.</p>
+                <p class="question__answer_pink">Мне ты можешь задать вопросы про любовь и отношения (они самые популярные), работу и карьеру, финансы, будущее, личностный рост и самопознание, состояние энергетики и.т.п.</p>
+                <p>Стоит избегать вопросов, на которые можно ответить однозначно (да или нет). Лучше переформулировать вопросы так, чтобы они подразумевали развернутый ответ. Вот примеры грамотно составленных вопросов: <span class="question__answer_pink question__answer_italic">Какие чувства испытывает ко мне (имя)? Что является истинной причиной ощущения усталости? А что поможет восстановить силы? Какой видят меня другие?</span></p>
+                <p>Если же ты не знаешь, как верно задать вопрос, то достаточно просто описать свою ситуацию. А я помогу. Ведь, для меня важно, чтобы ты получила ясные и четкие ответы.</p>
+            </div>
         </div>
 
         <div class="question">
+            <div class="question-wrap">
             <span class="question__txt">МОЖНО ЛИ СПРОСИТЬ ТАРО ПРО ДРУГОГО ЧЕЛОВЕКА?</span>
             <svg class="question__plus" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_129_135)">
@@ -270,9 +310,19 @@
                     </clipPath>
                 </defs>
             </svg>
+            </div>
+
+            <div class="question__answer">
+                <p>Довольно часто вопросы Таро и рунам затрагивают не только себя, но и других людей. С точки зрения этики копаться в чьей-то голове без разрешения не очень красиво.</p>
+                <p class="question__answer_pink">
+                    Но, например, ты имеешь подозрения, что человек тебя обманывает? Или тайно вредит? О таком не всегда скажут напрямую…А себя обезопасить хочется!</p>
+                <p>
+                    Поэтому, да, мы можем проводить гадание на другого человека. В таком случае будут нужна информация о нём (имя, дата рождения, фото или что-то из этого списка). А этично это или нет - решай сама.</p>
+            </div>
         </div>
 
         <div class="question">
+            <div class="question-wrap">
             <span class="question__txt">Я-МУЖЧИНА, МОЖНО МНЕ ПОГАДАТЬ?</span>
             <svg class="question__plus" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_129_135)">
@@ -286,9 +336,17 @@
                     </clipPath>
                 </defs>
             </svg>
+            </div>
+
+            <div class="question__answer">
+                <p>Конечно, можно! Если тебе нужен расклад на картах Таро, рунах (про отношения с женщиной, бизнес, карьеру, финансы и.т.п. ) ты можешь смело ко мне обращаться! Среди моих клиентов не только женщины, но и мужчины.</p>
+                <p class="question__answer_pink">Мужские вопросы часто касаются конкретных решений и поиска зон роста. И в этом расклады Таро и рун могут быть очень эффективным инструментом.</p>
+                <p>И да, я не пойду клеить объявления, что ты обратился к тарологу за услугой.</p>
+            </div>
         </div>
 
         <div class="question">
+            <div class="question-wrap">
             <span class="question__txt">А МОЖНО МНЕ РАСКЛАД СЕГОДНЯ?</span>
             <svg class="question__plus" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_129_135)">
@@ -302,6 +360,13 @@
                     </clipPath>
                 </defs>
             </svg>
+            </div>
+
+            <div class="question__answer">
+                <p>Тут вариант один - нужно написать гадалке и спросить)).</p>
+                <p class="question__answer_pink">А на самом деле такая возможность есть. Если у меня будет свободное время, то я сделаю твой расклад на Таро, рунах сегодня. Если же нет, то - на следующий день.</p>
+                <p>Что же делать если таролог нужен именно сегодня(сейчас) и другие варианты не подходят? В таком случае можем провести “экстренное” гадание с небольшой доплатой за срочность.</p>
+            </div>
         </div>
         <span class="btn btn_answers">ОБРАТИТЬСЯ К ТАРОЛОГУ</span>
     </div>
@@ -329,7 +394,7 @@
 
     <div class="contacts-links">
         <a class="contacts-links__link" href="tel:+79042668300">
-            <img class="contacts-links__img" src="img/phone.png">
+            <img class="contacts-links__img contacts-links__img_phone" src="img/phone.png">
             <span class="contacts-links__txt">+7 904 266 83 00</span></a>
     </div>
     </div>
@@ -343,14 +408,26 @@
             <div class="form-info">
                 <h3 class="title title_form">ЗАПОЛНИ ФОРМУ</h3>
                 <span class="form-info__txt">и я свяжусь с тобой в ближайшее время</span>
-                <span class="form-info__data">Имя:</span>
-                <input class="form-info__input" type="text">
-                <span class="form-info__data">Телефон:</span>
-                <input class="form-info__input" type="tel">
-                <span class="form-info__data">E-mail:</span>
-                <input class="form-info__input"  type="email">
-                <span class="form-info__data">Комментарий:</span>
-                <textarea class="form-info__message form-info__message_contacts" name="message" id="" cols="30" rows="10"></textarea>
+                <div class="form-group">
+                    <label class="form-info__data" for="user-name">Имя:</label>
+                    <input type="text"  class="form-info__input" name="name" id="user-name" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-info__data" for="user-phone">Телефон:</label>
+                    <input type="tel" class="form-info__input" name="phone" id="user-phone" autocomplete="tel">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-info__data" for="user-email">E-mail:</label>
+                    <input type="email" class="form-info__input" name="email" id="user-email" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-info__data" for="user-message">Комментарий:</label>
+                    <textarea class="form-info__message" name="message" id="user-message" cols="30" rows="10"></textarea>
+                </div>
+
             </div>
             <span class="btn btn_form">НАПИСАТЬ ТАРОЛОГУ</span>
         </form>
