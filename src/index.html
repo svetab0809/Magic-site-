@@ -19,7 +19,7 @@
     <h3 class="title" id="person">ОБО МНЕ</h3>
     <div class="person">
         <div class="person-mobile">
-            <img class="person__img person__img_mobile" src="img/photo1.jpg" alt="Фото таролога из Пензы"">
+            <img class="person__img person__img_mobile" src="img/photo1.jpg" alt="Фото таролога из Пензы">
         <span class="person__text">Добро пожаловать в магический салон EHWAZ. Меня зовут Лана. Я -  таролог, рунолог, практик Северной рунической традиции, психолог, энерготерапевт.</span>
         </div>
             <div class="photos">
@@ -470,27 +470,42 @@
             <span class="form-info__txt form-info__txt_modal form-info__txt_contacts">и я свяжусь с тобой в ближайшее время</span>
             <div class="form-group form-group_modal">
                 <label class="form-info__data form-info__data_modal" for="user-name">Имя:</label>
-                <input type="text" required  class="form-info__input form-info__input_modal" name="name" id="user-name" autocomplete="name">
+                <input type="text" required  class="form-info__input form-info__input_modal" name="name" id="person-name" autocomplete="name">
             </div>
 
             <div class="form-group form-group_modal">
                 <label class="form-info__data form-info__data_modal" for="user-phone">Телефон:</label>
-                <input type="tel" required class="form-info__input form-info__input_modal" name="phone" id="user-phone" autocomplete="tel">
+                <input type="tel" required class="form-info__input form-info__input_modal" name="phone" id="person-phone" autocomplete="tel">
             </div>
 
             <div class="form-group form-group_modal">
                 <label class="form-info__data form-info__data_modal" for="user-email">E-mail:</label>
-                <input type="email" required class="form-info__input form-info__input_modal" name="email" id="user-email" autocomplete="email">
+                <input type="email" required class="form-info__input form-info__input_modal" name="email" id="person-email" autocomplete="email">
             </div>
 
             <div class="form-group form-group_modal">
                 <label class="form-info__data form-info__data_modal" for="user-message">Комментарий:</label>
-                <textarea class="form-info__message form-info__message_modal" name="message" id="user-message" cols="30" rows="10"></textarea>
+                <textarea class="form-info__message form-info__message_modal" name="message" id="person-message" cols="30" rows="10"></textarea>
             </div>
 
         </div>
         <span class="btn btn_form btn_modal">НАПИСАТЬ ТАРОЛОГУ</span>
     </form>
+</div>
+
+<div class="modal-send">
+    <div class="modal-message">
+        <div class="modal-message-wrap">
+    <svg class="modal-message__img" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M77.0833 140.288C114.478 140.288 144.792 111.058 144.792 75.0002C144.792 38.9427 114.478 9.7124 77.0833 9.7124C39.6891 9.7124 9.375 38.9427 9.375 75.0002C9.375 111.058 39.6891 140.288 77.0833 140.288Z" fill="#BEA0E2"/>
+        <path d="M66.8437 96.875C65.206 96.8434 63.6462 96.1701 62.5 95L45.6562 77.7188C44.5 76.5294 43.8637 74.9295 43.8871 73.271C43.9105 71.6125 44.5919 70.0312 45.7812 68.875C46.9705 67.7188 48.5704 67.0825 50.229 67.1059C51.8875 67.1294 53.4688 67.8107 54.6249 69L67.1249 81.875L95.8125 54.8438C97.0308 53.783 98.6126 53.2353 100.226 53.3153C101.84 53.3953 103.359 54.097 104.467 55.2731C105.574 56.4492 106.183 58.0085 106.166 59.6238C106.149 61.2391 105.507 62.7851 104.375 63.9375L71.2187 95.1875C70.0346 96.2965 68.4658 96.9016 66.8437 96.875Z" fill="#9363CF"/>
+    </svg>
+
+        <p class="modal-message__text">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА!</p>
+        <p class="modal-message__text modal-message__text_italic">Я свяжусь с тобой в ближайшее время. </p>
+        <span class="btn btn_message">ВЕРНУТЬСЯ НА САЙТ</span>
+</div>
+    </div>
 </div>
 //= ./blocks/footer.html
 
