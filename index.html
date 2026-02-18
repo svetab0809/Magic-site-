@@ -532,12 +532,42 @@
        </div>
 </div>
     </div>
-
-
-
-
-
 </main>
+
+<div class="modal">
+    <form class="modal-form">
+        <svg class="cross cross_modal" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5113 20.5113C21.6096 19.4129 23.3904 19.4129 24.4887 20.5113L69.4886 65.5114C70.587 66.6097 70.587 68.3902 69.4886 69.4886C68.3902 70.587 66.6097 70.587 65.5114 69.4886L20.5113 24.4887C19.4129 23.3904 19.4129 21.6096 20.5113 20.5113Z" fill="#D6D4B4"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4886 20.5113C70.5869 21.6096 70.5869 23.3904 69.4886 24.4887L24.4888 69.4886C23.3904 70.587 21.6096 70.587 20.5113 69.4886C19.4129 68.3902 19.4129 66.6097 20.5112 65.5114L65.5113 20.5113C66.6097 19.4129 68.3902 19.4129 69.4886 20.5113Z" fill="#D6D4B4"/>
+        </svg>
+
+        <div class="form-info form-info_modal">
+            <h3 class="title title_form title_modal">ЗАПОЛНИ ФОРМУ</h3>
+            <span class="form-info__txt form-info__txt_modal form-info__txt_contacts">и я свяжусь с тобой в ближайшее время</span>
+            <div class="form-group form-group_modal">
+                <label class="form-info__data form-info__data_modal" for="user-name">Имя:</label>
+                <input type="text" required  class="form-info__input form-info__input_modal" name="name" id="user-name" autocomplete="name">
+            </div>
+
+            <div class="form-group form-group_modal">
+                <label class="form-info__data form-info__data_modal" for="user-phone">Телефон:</label>
+                <input type="tel" required class="form-info__input form-info__input_modal" name="phone" id="user-phone" autocomplete="tel">
+            </div>
+
+            <div class="form-group form-group_modal">
+                <label class="form-info__data form-info__data_modal" for="user-email">E-mail:</label>
+                <input type="email" required class="form-info__input form-info__input_modal" name="email" id="user-email" autocomplete="email">
+            </div>
+
+            <div class="form-group form-group_modal">
+                <label class="form-info__data form-info__data_modal" for="user-message">Комментарий:</label>
+                <textarea class="form-info__message form-info__message_modal" name="message" id="user-message" cols="30" rows="10"></textarea>
+            </div>
+
+        </div>
+        <span class="btn btn_form btn_modal">НАПИСАТЬ ТАРОЛОГУ</span>
+    </form>
+</div>
 <footer class="footer">
     <div class="logo">
         <span class="logo__main">EHWAZ</span>
