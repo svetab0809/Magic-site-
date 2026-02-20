@@ -107,7 +107,7 @@
 
     <h3 class="title title_yellow" id="help-info">ЧЕМ Я МОГУ ПОМОЧЬ</h3>
     <div class="help">
-            <svg class="nav" viewBox="0 0 50 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav" id="help-prev" viewBox="0 0 50 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M45 5L5 40L45 75" stroke="#FFFDFD" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
@@ -133,7 +133,7 @@
                     </div>
             </div>
         </div>
-        <svg class="nav" viewBox="0 0 50 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="nav" id="help-prev" viewBox="0 0 50 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.00007 5L45.0001 40L5.00007 75" stroke="#FFFCFC" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
     </div>
@@ -162,7 +162,7 @@
         <h4> РАСКЛАД ВЫПОЛНЯЕТСЯ НА КАРТАХ ТАРО, СКАНДИНАВСКИХ РУНАХ</h4>
 
         <div class="price-list">
-            <svg class="nav nav_prev" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav" id="price-prev" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M47 5.00037L5 35.0004L47 65.0004" stroke="#D6D4B4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
@@ -194,7 +194,7 @@
     <span class="btn btn__price  btn__price_pink">ЗАПИСАТЬСЯ НА РАСКЛАД</span>
 </div>
 
-            <svg class="nav nav_next" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav" id="price-next" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.00039 5.00037L47.0004 35.0004L5.00039 65.0004" stroke="#D6D4B4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
@@ -267,51 +267,186 @@
     </div>
 
 
-    <div class="reviews grey-back">
+    <div class="reviews grey-back swiper">
         <h3 class="title title_yellow title_reviews" id="reviews">ОТЗЫВЫ КЛИЕНТОВ</h3>
 
-        <div class="review">
-            <div class="review-person">
-            <img class="review__photo" src="img/woman1.png" alt="Фото клиента для отзыва">
-            <div class="person-data">
-                <span class="review__name review__name_mobile">Татьяна В.</span>
-            <span class="review__city review__city_mobile">гор.Пенза</span>
-            </div>
-            </div>
+        <div class="swiper-wrapper">
 
-            <div class="review-wrap">
-                <span class="review__name">Татьяна В.</span>
-                <span class="review__city">гор.Пенза</span>
-                <span class="review__text">Не могла никак забыть бывшего. Обратилась к Лане за гаданием на картах Таро. Расклад показал проявление от мужчины в скором времени. Так оно и случилось, предсказание Таро сбылось. Консультацию провели онлайн, в телеграмм. А ещё в подарок я получила расчет карты Таро по дате рождения, что помогло мне увидеть свои сильные стороны и задачи для развития.
-</span>
-            </div>
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman1.png" alt="Фото клиента для отзыва">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile">Татьяна В.</span>
+                            <span class="review__city review__city_mobile">гор.Пенза</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name">Татьяна В.</span>
+                        <span class="review__city">гор.Пенза</span>
+                        <span class="review__text">Не могла никак забыть бывшего. Обратилась к Лане за гаданием на картах Таро. Расклад показал проявление от мужчины в скором времени. Так оно и случилось, предсказание Таро сбылось. Консультацию провели онлайн, в телеграмм. А ещё в подарок я получила расчет карты Таро по дате рождения, что помогло мне увидеть свои сильные стороны и задачи для развития.</span>
+                    </div>
+                </div>
 
-        </div>
-
-        <div class="review review_inverted">
-            <div class="review-person">
-            <img class="review__photo" src="img/woman2.png" alt="Фото клиента таролога">
-                <div class="person-data">
-                <span class="review__name review__name_mobile review__name_yellow">Елена Ч.</span>
-            <span class="review__city review__city_mobile">гор.Пенза</span>
+                <div class="review review_inverted">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman2.png" alt="Фото клиента таролога">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile review__name_yellow">Елена Ч.</span>
+                            <span class="review__city review__city_mobile">гор.Пенза</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name review__name_yellow">Елена Ч.</span>
+                        <span class="review__city">гор.Пенза</span>
+                        <span class="review__text">Когда меня что-то беспокоит - обращаюсь к Лане за гаданием. Отличный честный таролог и мастер своего дела! Особенно радует, что не нужно идти на личный прием. А можно получить быстрый ответ от карт Таро на свои вопросы онлайн! Поэтому, если вам нужен таролог - рекомендую Лану. Она мой личный таролог почти 9 лет.</span>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman3.png" alt="Фото клиента для отзыва">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile">Мария Д.</span>
+                            <span class="review__city review__city_mobile">пгт.Земетчино</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name">Мария Д.</span>
+                        <span class="review__city">пгт.Земетчино</span>
+                        <span class="review__text">Искалка гадалку в Пензе онлайн (адреса и цены). Найти было сложно, сразу навязывали лишнее. Знакомая посоветовала обратиться к Лане. Цена за гадание оказалась недорогой по сравнению с тем, что предлагает рынок услуг тарологов сегодня. Предсказание Таро оказалось четким и по делу. Телефон гадалки сохранила, буду обращаться за помощью ещё!</span>
+                    </div>
+                </div>
 
-            <div class="review-wrap">
-            <span class="review__name review__name_yellow">Елена Ч.</span>
-            <span class="review__city">гор.Пенза</span>
-                <span class="review__text">Когда меня что-то беспокоит - обращаюсь к Лане за гаданием. Отличный честный таролог и мастер своего дела! Особенно радует, что не нужно идти на личный прием. А можно получить быстрый ответ от карт Таро на свои вопросы онлайн! Поэтому, если вам нужен таролог - рекомендую Лану. Она мой личный таролог почти 9 лет.</span>
+                <div class="review review_inverted">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/man.png" alt="Фото клиента таролога">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile review__name_yellow">Алексей К.</span>
+                            <span class="review__city review__city_mobile">гор.Пенза</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name review__name_yellow">Алексей К.</span>
+                        <span class="review__city">гор.Пенза</span>
+                        <span class="review__text">Для меня Лана - лучший таролог. Всегда говорит правду. Как она это делает? Наверное, магия! Крайний раз делали расклад Таро на женщину. Не понимал, интересен ли я ей. Гадание Таро показало, что оказывается девушка замужем. Поэтому так себя и ведет. Таролог увидела, что скоро я встречу другую женщину и с ней у меня закрутятся романтические отношения. Нужно ли говорить, что сбылось? 
+</span>
+                    </div>
+                </div>
             </div>
-        </div>
-   </div>
-    <div class="reviews-nav">
-        <svg class="nav" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman4.png" alt="Фото клиента для отзыва">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile">Ксения Л.</span>
+                            <span class="review__city review__city_mobile">гор.Городище</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name">Ксения Л.</span>
+                        <span class="review__city">гор.Городище</span>
+                        <span class="review__text">Я из Городищенского района, Пензенской области. Мне нужно было срочно позвонить гадалке и попасть на прием. Накопились вопросы. Нашла номер телефона Ланы на сайте. Она предложила провести гадание на картах Таро по моей проблеме в телеграмм. Расклад на отношения я получила в тот же день. Таролог описала всё как есть, чем помогла мне разобраться в своих чувствах и развеять сомнения. 
+</span>
+                    </div>
+                </div>
+
+                <div class="review review_inverted">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman5.png" alt="Фото клиента таролога">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile review__name_yellow">Алина П.</span>
+                            <span class="review__city review__city_mobile">гор.Кузнецк</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name review__name_yellow">Алина П.</span>
+                        <span class="review__city">гор.Кузнецк</span>
+                        <span class="review__text">Я из Пензенской области. Заказала расклад на картах  у таролога в тг(телеграмме). Гадалка наговорила ужасы какие-то. Я стала искать таролога в Пензе по настоящим отзывам людей об их работе. Понравились отзывы клиентов о Лане. Написала ей вопросы. Гадалка сделала расклад по фото. Очень успокоила меня. Теперь я знаю, где найти сильного таролога, если мне понадобится!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman6.png" alt="Фото клиента для отзыва">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile">Полина Ш.</span>
+                            <span class="review__city review__city_mobile">гор.Никольск</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name">Полина Ш.</span>
+                        <span class="review__city">гор.Никольск</span>
+                        <span class="review__text">К Лане попала по отзывам знакомых людей год назад. В Пензенской области найти хорошую гадалку непросто. А меня буквально мучили вопросы про одного парня. Таролог порекомендовала расклад на мысли, чувства, намерения моего любимого и развитие отношений. Таро дало четкие ответы про парня. И это помогло мне снять огромный камень с души! Сейчас у нас всё хорошо! 
+
+</span>
+                    </div>
+                </div>
+
+                <div class="review review_inverted">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman7.png" alt="Фото клиента таролога">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile review__name_yellow">Ольга Ю.</span>
+                            <span class="review__city review__city_mobile">гор.Пенза</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name review__name_yellow">Ольга Ю.</span>
+                        <span class="review__city">гор.Пенза</span>
+                        <span class="review__text">Встречалась с мужчиной год, решила сделать расклад Таро на возможную беременность. А оказалось, что для него мы просто любовники и никаких серьезных планов он на меня не строит. Только лапшу на уши вешает. Спасибо тарологу Лане, что помогла снять розовые очки. Он мне чуть позже всё это и сам сказал. А к этому моменту я уже приняла ситуацию.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman8.png" alt="Фото клиента для отзыва">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile">Карина Ц.</span>
+                            <span class="review__city review__city_mobile">гор.Пенза</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name">Карина Ц.</span>
+                        <span class="review__city">гор.Пенза</span>
+                        <span class="review__text">Хочу оставить отзыв о работе с тарологом Ланой. Вот уже 8 лет обращаюсь к ней. И ни разу за этот период не возникло мысли пойти искать другого специалиста. Чаще всего гадание проводим в тг, вотсапп. Для меня это очень удобно с маленькими детьми. Не надо никуда ехать и думать с кем их оставить. Лана - очень деликатная и отзывчивая, мне с ней комфортно общаться. Всегда поможет прояснить ситуацию и разложить всё по полочкам.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="review review_inverted">
+                    <div class="review-person">
+                        <img class="review__photo" src="img/woman9.png" alt="Фото клиента таролога">
+                        <div class="person-data">
+                            <span class="review__name review__name_mobile review__name_yellow">Юлия Т.</span>
+                            <span class="review__city review__city_mobile">гор.Каменка</span>
+                        </div>
+                    </div>
+                    <div class="review-wrap">
+                        <span class="review__name review__name_yellow">Юлия Т.</span>
+                        <span class="review__city">гор.Каменка</span>
+                        <span class="review__text">3 года назад на работе начались проблемы. Не знала, что делать. Коллега посоветовала Лану. Мы сделали диагностику негатива. Оказалось, что коллега мне завидовала, строила козни и магичила. Таролог сделала мне чистку и рунический став на защиту. Кстати, Таро показали, что всё плохое вернется её обратно. Так и произошло. А у меня рабочие дела постепенно наладились.</span>
+                    </div>
+                </div>
+            </div>
+  </div>
+    </div>
+
+        <div class="reviews-nav">
+        <svg class="nav btn-prev" id="reviews-prev" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M47 5.00049L5 35.0005L47 65.0005" stroke="#D6D4B4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <svg class="nav" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="nav btn-next" id="reviews-next" viewBox="0 0 52 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.00037 5.00049L47.0004 35.0005L5.00037 65.0005" stroke="#D6D4B4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </div>
+
+
+
+
 
     <h3 class="title" id="faq">ОТВЕТЫ НА ВОПРОСЫ</h3>
     <div class="answers">
@@ -602,8 +737,6 @@
             </div>
         </div>
    </div>
-
-
 
 </body>
 
