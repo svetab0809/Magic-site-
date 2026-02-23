@@ -8,14 +8,27 @@ const menuExit = document.querySelector('.cross')
 const headerMain = document.querySelector('.header-top')
 
 
-// const priceSlider = new Swiper ('.services', {
-//
-//     navigation: {
-//         prevEl: "#price-prev",
-//         nextEl: "#price-next",
-//     }
-//
-// })
+const priceSlider = new Swiper ('.price-container', {
+
+    navigation: {
+        prevEl: "#price-prev",
+        nextEl: "#price-next",
+    },
+
+    loop: true,
+    slidesPerView: 2,
+    simulateTouch: true,
+    touchRatio:1,
+    touchAngle:45,
+    grabCursor:true,
+
+    breakpoints: {
+
+        344: {slidesPerView:1},
+        1180: {slidesPerView:2, spaceBetween: 80},
+    }
+
+})
 
 const reviewsSlider = new Swiper (".reviews", {
 
