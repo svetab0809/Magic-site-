@@ -2122,8 +2122,8 @@
 @media (max-width: 768px) {
 
   .modal-send {
-    margin-left: -100px;
-    margin-right: -100px;
+    margin-left: -50px;
+    margin-right: -50px;
   }
 
   .modal-message__img {
@@ -2132,22 +2132,27 @@
   }
 
   .modal {
-    margin-left: -100px;
-    margin-right: -100px;
+    margin-left: -50px;
+    margin-right: -50px;
   }
 
   body {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .grey-back {
-    margin-left: -100px;
-    margin-right: -100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .main {
+    margin-left: -50px;
+    margin-right: -50px;
   }
 
   .logo__main {
@@ -2190,6 +2195,7 @@
       font-size: 14px;
       padding-top: 15px;
       padding-bottom: 15px;
+      margin-left: 150px;
     }
   }
 
@@ -2198,7 +2204,7 @@
   }
 
   .card, .card-back, .flip-container {
-    width: 200px;
+    width: 340px;
     height: 340px;
     display: block;
     margin: 0 auto;
@@ -2209,23 +2215,28 @@
  }
 
   .card__title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .card__text {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .card-back-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
+  }
+
+  .card-back__text {
+    font-size: 14px;
   }
 
   .card__img {
     padding: 0;
+    width: 200px;
   }
 
   .result-info-wrap {
@@ -2250,8 +2261,17 @@
     font-size: 18px;
   }
 
-  .form_contacts {
-    width: 102%;
+  .form_free {
+  width: 75%;
+}
+
+  .question {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .contacts-form {
+    width: 75%;
   }
 
   .contacts-data {
@@ -2289,6 +2309,14 @@
 
   .price__price {
     font-size: 30px;
+  }
+
+  .nav_price-next {
+    width: 150px;
+  }
+
+  .nav_price-prev {
+    width: 150px;
   }
 
 }
@@ -2406,7 +2434,7 @@
 
   .btn__price {
     width: 40%;
-    margin-left: 100px;
+    margin-left: 130px;
   }
 }
 
@@ -2554,7 +2582,7 @@
   }
 
   .btn__price {
-    margin-left: 90px;
+    margin-left: 125px;
   }
 
 }
@@ -2747,16 +2775,14 @@
     padding-top: 12px;
     padding-bottom: 12px;
     width: 36%;
-    margin-left: 85px;
+    margin-left: 115px;
   }
-
-
 
 }
 
 @media (max-width: 540px) {
 
-  .price {
+ .price {
     height: 390px;
   }
 
@@ -2782,13 +2808,12 @@
   }
 
   .btn__price {
-    margin-left: 75px;
+    margin-left: 90px;
   }
 
-
   .modal-send {
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 
   .modal-message__text {
@@ -2800,13 +2825,13 @@
   }
 
   .modal {
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 
   .modal-form {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 70%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -2816,6 +2841,7 @@
     width: 35px;
     height: 35px;
   }
+
 
   .form-info__message_modal {
     height: 80px;
@@ -2850,22 +2876,22 @@
   }
 
   body {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .main {
-    margin-left: -50px;
-    margin-right: -50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .grey-back {
-    margin-left: -50px;
-    margin-right: -50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   h2 {
@@ -2964,9 +2990,31 @@ overflow: hidden;
     background-image: none;
   }
 
+  .form-group_modal {
+    width: 85%;
+  }
+
+  .form-info {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &_modal {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
   .form_free {
     background-image: url("/img/taro-momile.png");
     background-size: cover;
+  }
+
+  .form-info__input {
+    width: 85%;
+  }
+
+  .form-info__message {
+    width: 85%;
   }
 
   .promo-condition__wrap {
@@ -3040,6 +3088,10 @@ overflow: hidden;
     font-size: 16px;
   }
 
+  .contacts-links {
+    margin-bottom: 10px;
+  }
+
   .contacts-links__txt {
     font-size: 14px;
   }
@@ -3076,6 +3128,35 @@ overflow: hidden;
     font-size: 20px;
   }
 
+  .card, .card-back, .flip-container {
+    width: 260px;
+    left: -60px;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+
+  .card__text {
+    font-size: 14px;
+  }
+
+  .card-back-wrap {
+    margin-top: 10px;
+  }
+
+  .card-back__text {
+    font-size: 13px;
+  }
+
+  .btn_form {
+    font-weight: bold;
+    background-color: rgba(251, 204, 254, 0.7);
+    color: #3f3e5a;
+
+  }
+
+
 }
 
 @media (max-width: 430px) {
@@ -3106,18 +3187,6 @@ overflow: hidden;
     font-size: 17px;
   }
 
-  .card-back__text {
-    font-size: 7px;
-  }
-
- .card-back-wrap {
-    margin-top: 30px;
-
-  }
-
-  .header-top {
-    width: 108%;
-  }
 
   .logo__main {
     font-size: 23px;
@@ -3170,23 +3239,10 @@ overflow: hidden;
   }
 
   .card, .card-back, .flip-container {
-    width: 115px;
-    height: 280px;
-  }
-
- .flip-container {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .card-info {
-    width: 160%;
+    width: 225px;
+    padding-right: 30px;
+    padding-left: 30px;
+    left: -30px;
   }
 
   .card__title {
@@ -3194,13 +3250,26 @@ overflow: hidden;
   }
 
   .card__text {
-    width: 100%;
-    font-size: 10px;
+font-size: 13px;
   }
 
   .card__img {
-    width: 150px;
+    width: 185px;
   }
+
+  .nav_card-prev {
+    width: 10px;
+  }
+
+  .nav_card-next {
+    width: 10px;
+  }
+
+    .card-back__text {
+      font-size: 11px;
+      margin-top: 20px;
+    }
+
 
   .result-info {
     margin-bottom: 10px;
@@ -3230,12 +3299,6 @@ overflow: hidden;
     margin-top: 35px;
   }
 
-  .btn_form {
-    font-weight: bold;
-    background-color: rgba(251, 204, 254, 0.7);
-    color: #3f3e5a;
-
-  }
 
   .review__photo {
   width: 180px;
@@ -3341,10 +3404,9 @@ width: 40%;
 
   .btn__price {
     width: 40%;
-    margin-left: 40px;
+    margin-left: 50px;
     font-size: 9px;
   }
-
 
 }
 
@@ -3358,17 +3420,6 @@ width: 40%;
     font-size: 15px;
   }
 
-  .menu-mobile__header {
-    width: 105%;
-  }
-
-  .header-top {
-    width: 105%;
-  }
-
-  .burger-line {
-  width: 35px;
-}
 
   h1 {
   font-size: 21px;
@@ -3408,6 +3459,10 @@ width: 40%;
     height: 200px;
   }
 
+  .review {
+    margin-top: 5px;
+  }
+
   .review__photo {
     width: 170px;
   }
@@ -3424,6 +3479,15 @@ width: 40%;
     font-size: 15px;
   }
 
+  .modal-form {
+    width: 75%;
+  }
+
+  .cross_modal {
+    width: 32px;
+    height: 32px;
+  }
+
   .form-info__txt {
 
     &_contacts {
@@ -3431,12 +3495,21 @@ width: 40%;
     }
 
     &_modal {
+      font-size: 14px;
       width: 88%;
     }
   }
 
   .form-group_modal {
     margin-top: 5px;
+  }
+
+  .form-info__input {
+    width: 82%;
+  }
+
+  .form-info__message {
+    width: 82%;
   }
 
 
@@ -3451,7 +3524,7 @@ width: 40%;
 
 .btn__price {
   width: 41%;
-  margin-left: 34px;
+  margin-left: 45px;
 }
 
 }
@@ -3473,7 +3546,7 @@ width: 40%;
 
   .btn__price {
     margin-bottom: 20px;
-    margin-left: 32px;
+    margin-left: 43px;
   }
 }
 
@@ -3490,9 +3563,8 @@ width: 40%;
   .menu-mobile__img {
     width: 100px;
   }
-
-  .menu-mobile__header {
-    width: 103%;
+  .burger-line {
+    width: 35px;
   }
 
   .cross {
@@ -3500,13 +3572,6 @@ width: 40%;
     height: 35px;
   }
 
-  .header-top {
-    width: 103%;
-  }
-
-  .card-back__text {
-  font-size: 6px;
-}
 
   .person__text {
     font-size: 13px;
@@ -3517,23 +3582,19 @@ width: 40%;
   }
 
   .card, .card-back, .flip-container {
-    width: 90px;
-  }
-
-  .card__text {
-    font-size: 9px;
+width: 200px;
   }
 
   .card__img {
-    width: 140px;
+    width: 180px;
   }
 
-  .card-info {
-    width: 176%;
+  .card__text {
+    font-size: 11px;
   }
 
   .form-info__txt {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .form-info__data {
@@ -3600,18 +3661,43 @@ width: 40%;
   }
 
   .btn__price {
-    width: 45%;
-    margin-left: 22px;
+    width: 38%;
+    margin-left: 42px;
   }
 
+  .btn-prev {
+    width: 12px;
+  }
 
+  .btn-next {
+    width: 12px;
+  }
 
 }
 
 @media (max-width: 376px) {
 
+  .menu-mobile-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .modal-message__text {
     font-size: 14px;
+  }
+
+  .menu-mobile__img {
+    width: 120px;
+  }
+
+  .burger-line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .cross {
+    width: 30px;
+    height: 30px;
   }
 
   .btn_modal {
@@ -3619,22 +3705,13 @@ width: 40%;
   }
 
   .modal-form {
-    width: 75%;
+    width: 80%;
   }
 
-  .cross_modal {
-    width: 30px;
-    height: 30px;
-  }
 
   .mobile-tg__img {
     width: 20px;
     margin-right: 8px;
-  }
-
-  .burger-line {
-    width: 32px;
-    height: 2px;
   }
 
   h1 {
@@ -3665,12 +3742,8 @@ width: 40%;
     font-size: 12px;
   }
 
-  .card, .card-back, .flip-container {
-    width: 80px;
-  }
-
-  .card-info {
-    width: 205%;
+  .card-back__text {
+    margin-top: 15px;
   }
 
   .result__txt {
@@ -3731,11 +3804,9 @@ width: 40%;
   }
 
   .btn__price {
-    width: 46%;
-    margin-left: 19px;
-    }
-
-
+    width: 40%;
+    margin-left: 39px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -3749,8 +3820,7 @@ width: 40%;
     font-size: 13px;
   }
 
-
-  .logo__main {
+ .logo__main {
     font-size: 22px;
   }
 
@@ -3792,30 +3862,24 @@ width: 40%;
   }
 
   .card, .card-back, .flip-container {
-    width: 45px;
+    width: 180px;
+    height: 300px;
   }
 
   .card__title {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .card__text {
+    font-size: 10px;
   }
 
   .card__img {
-    width: 90px;
+    width: 165px;
   }
-
-  .card-info {
-    width: 270%;
-  }
-
 
   .card-back__text {
-    font-size: 4px;
-    margin-top: 2px;
-    margin-left: 2px;
-  }
-
-  .card-back-wrap {
-    margin-top: 50px;
+    font-size: 10px;
   }
 
   .result__txt {
@@ -3857,8 +3921,10 @@ width: 40%;
   }
 
   .btn__price {
-    width: 44%;
-    margin-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 40px;
+    width: 37%;
   }
 
   .title_free {
@@ -3890,6 +3956,12 @@ width: 40%;
     width: 70%;
     padding-top: 5px;
     padding-bottom: 5px;
+
+    &_modal {
+      width: 80%;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
   }
 
   .form-info__message {
@@ -3897,6 +3969,12 @@ width: 40%;
     padding-top: 5px;
     padding-bottom: 5px;
     height: 100px;
+
+    &_modal {
+      width: 80%;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
   }
 
   .review__photo {
@@ -3948,8 +4026,16 @@ width: 40%;
   }
 
   .btn__price {
-    width: 47%;
-    margin-left: 7px;
+    width: 40%;
+    margin-left: 32px;
+  }
+
+  .form-info__input {
+    width: 80%;
+  }
+
+  .form-info__message {
+    width: 80%;
   }
 }
 
