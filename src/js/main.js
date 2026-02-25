@@ -6,29 +6,9 @@ const burgerMenu = document.querySelector('.bar')
 const mobileMenu = document.querySelector('.menu-mobile')
 const menuExit = document.querySelector('.cross')
 const headerMain = document.querySelector('.header-top')
-const flipperCard = document.querySelectorAll('.flip-container')
 
-flipperCard.forEach(function(flipper) {
-    flipper.addEventListener('click', function(event) {
-        if (event.target.closest('.nav')) return;
-        this.classList.toggle('flipped');
-    });
-});
 
-const cardSlider = new Swiper('.help', {
-    navigation: {
-        prevEl: ".nav_card-prev",
-        nextEl: ".nav_card-next",
-    },
 
-    loop: true,
-    slidesPerView: 1,
-    simulateTouch: true,
-    touchRatio:1,
-    touchAngle:45,
-    grabCursor:true,
-    spaceBetween: 800,
-});
 
 
 const priceSlider = new Swiper ('.price-container', {
