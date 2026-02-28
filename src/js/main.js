@@ -1,5 +1,6 @@
 
 const btn = document.querySelectorAll('.btn')
+const btnForm = document.querySelectorAll('.btn_form')
 const modalForm = document.querySelector('.modal')
 const modalCross = document.querySelector('.cross_modal')
 const burgerMenu = document.querySelector('.bar')
@@ -64,9 +65,17 @@ button.addEventListener('click', (event) => {
 });
 });
 
+
+btnForm.forEach(button => {
+    button.addEventListener('click', (event) => {
+        modalForm.style.display = 'none'
+    });
+});
+
 modalCross.addEventListener('click', (event) => {
     modalForm.style.display = 'none';
 });
+
 
 burgerMenu.addEventListener ('click', (event) => {
     mobileMenu.style.height = '100%'
