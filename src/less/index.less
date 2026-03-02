@@ -60,8 +60,15 @@
 
 .help {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
+  padding-top: 30px;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .flip-container {
@@ -74,8 +81,8 @@
 
 
 .flip-container, .card, .card-back {
-  width: 800px;
-  height: 450px;
+  width: 400px;
+  height: 600px;
   font-family: 'Alegreya SC';
   text-align: center;
 }
@@ -104,15 +111,25 @@
   justify-content: space-between;
   align-items: center;
 
+  &__rotate {
+width: 30px;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+
   &__img {
-    width: 330px;
-    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    margin-bottom: 20px;
+
   }
 
   &__title {
     color: #ed94e3;
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
   }
 
@@ -121,9 +138,11 @@
   }
 }
 
+
 .card-info {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
 }
 
@@ -155,7 +174,6 @@
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
-  margin-top: 50px;
   font-family: 'Alegreya SC';
 
   &__txt {
