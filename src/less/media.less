@@ -519,6 +519,11 @@
     height: 450px;
   }
 
+  .card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .card__img {
     height: 170px;
   }
@@ -537,6 +542,11 @@
 
   .card__text {
     font-size: 13px;
+  }
+
+  .card-back {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .card-back__text {
@@ -878,7 +888,12 @@
   .card, .card-back, .flip-container {
     width: 750px;
     height: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+  }
+
+  .card {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .card-wrap {
@@ -903,7 +918,6 @@
 
   .card__rotate {
     width: 20px;
-    margin-top: 20px;
   }
 
   .card__img_little {
@@ -912,6 +926,11 @@
 
   .card-info {
     width: 95%;
+  }
+
+  .card-back {
+      padding-top: 25px;
+      padding-bottom: 25px;
   }
 
 
@@ -1421,6 +1440,10 @@
 }
 
 @media (max-width: 896px) {
+
+  .card, .card-back, .flip-container {
+    margin-bottom: 70px;
+  }
 
   .modal-message__img {
     width: 65px;
@@ -2701,6 +2724,10 @@
     margin-left: 140px;
   }
 
+  .card-group {
+    margin-top: -12px;
+  }
+
 }
 
 @media (max-width: 668px) {
@@ -2935,11 +2962,11 @@
   .card, .card-back, .flip-container {
     width: 400px;
     height: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-  .card {
-    margin-bottom: 10px;
-  }
 
   .card-info {
     width: 100%;
@@ -3409,9 +3436,11 @@ overflow: hidden;
   .card, .card-back, .flip-container {
     width: 300px;
     height: 130px;
-    padding-right: 30px;
-    padding-left: 30px;
-    left: -30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    left: -25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .card__img {
@@ -3433,11 +3462,16 @@ overflow: hidden;
 
   .card__rotate {
     width: 10px;
+    margin-bottom: 8px;
   }
 
   .card-back__text {
     font-size: 7px;
     margin-bottom: 5px;
+  }
+
+  .card-group {
+    margin-top: -15px;
   }
 
 
@@ -3730,6 +3764,10 @@ width: 40%;
   .btn_modal {
     width: 45%;
   }
+
+  .card, .card-back, .flip-container {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -3767,9 +3805,6 @@ width: 40%;
     height: 110px;
   }
 
-  .card-group {
-    margin-top: -10px;
-  }
 
   .card-wrap {
     margin-top: -10px;
@@ -4105,9 +4140,7 @@ width: 40%;
     height: 280px;
   }
 
-
-
-  .price__title {
+ .price__title {
 font-size: 17px;
   }
 
@@ -4218,6 +4251,12 @@ font-size: 11px;
 
   .footer__copyright {
     font-size: 16px;
+  }
+
+
+  .card, .card-back, .flip-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
 }
