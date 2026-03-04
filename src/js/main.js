@@ -7,9 +7,30 @@ const burgerMenu = document.querySelector('.bar')
 const mobileMenu = document.querySelector('.menu-mobile')
 const menuExit = document.querySelector('.cross')
 const headerMain = document.querySelector('.header-top')
+const question = document.querySelectorAll('.question')
 
 
+question.forEach(question => {
+    question.addEventListener('click', (event) => {
+const answer = question.querySelector('.question__answer')
+        const answerCssClasses = answer.classList
+        const cross = question.querySelector('.question__plus')
 
+        let answerHeight = `${answer.scrollHeight}px`
+        let crossDegree = 45
+
+        if(answerCssClasses.contains('question_active')) {
+            answerCssClasses.remove('question_active')
+            answerHeight = 0
+            crossDegree = 0
+        } else {
+            answerCssClasses.add('question_active')
+        }
+        cross.style.transform = `rotate(${crossDegree}deg)`
+        answer.style.height = answerHeight
+    });
+
+})
 
 
 const priceSlider = new Swiper ('.price-container', {
