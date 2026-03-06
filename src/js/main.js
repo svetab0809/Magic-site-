@@ -1,17 +1,31 @@
-
-const btn = document.querySelectorAll('.btn')
-const btnForm = document.querySelectorAll('.btn_form')
-const modalForm = document.querySelector('.modal')
-const modalCross = document.querySelector('.cross_modal')
 const burgerMenu = document.querySelector('.bar')
 const mobileMenu = document.querySelector('.menu-mobile')
 const menuExit = document.querySelector('.cross')
-const headerMain = document.querySelector('.header-top')
 const question = document.querySelectorAll('.question')
 
+function modalToggle(elem, displayValue) {
+    elem.style.display = displayValue
+}
+
+const btnOpenModal = document.querySelectorAll('[data-show-modal]');
+const modalForm = document.querySelector('.modal');
+
+for (let button of btnOpenModal) {
+    button.addEventListener('click', () => {
+        modalToggle(modalForm, 'block');
+    });
+}
+
+const modalClose = document.querySelectorAll ('[data-close-modal]')
+
+for (let close of modalClose) {
+    close.addEventListener('click', (event) => {
+        modalToggle(modalForm, 'none')
+    })
+}
 
 question.forEach(question => {
-    question.addEventListener('click', (event) => {
+    question.addEventListener('click', () => {
 const answer = question.querySelector('.question__answer')
         const answerCssClasses = answer.classList
         const cross = question.querySelector('.question__plus')
@@ -79,31 +93,12 @@ const reviewsSlider = new Swiper (".reviews", {
 });
 
 
-
-btn.forEach(button => {
-button.addEventListener('click', (event) => {
-    modalForm.style.display = 'block'
-});
-});
-
-
-btnForm.forEach(button => {
-    button.addEventListener('click', (event) => {
-        modalForm.style.display = 'none'
-    });
-});
-
-modalCross.addEventListener('click', (event) => {
-    modalForm.style.display = 'none';
-});
-
-
-burgerMenu.addEventListener ('click', (event) => {
+burgerMenu.addEventListener ('click', () => {
     mobileMenu.style.height = '100%'
 
 });
 
-menuExit.addEventListener('click', (event) => {
+menuExit.addEventListener('click', () => {
     mobileMenu.style.height = '0%'
 });
 

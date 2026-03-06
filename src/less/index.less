@@ -535,6 +535,7 @@ width: 30px;
     color: white;
     overflow: hidden;
     transition: height 0.3s ease;
+    height: 0;
 
     &_pink {
       color: #ed94e3;
@@ -754,6 +755,7 @@ padding-right: 75px;
   margin-left: -150px;
   display: none;
 
+
   &_error {
     display: none;
   }
@@ -765,13 +767,17 @@ padding-right: 75px;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 50%;
+  width: 40%;
   background-color: rgba(190, 160, 226, 0.63);
   border-radius: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
+
+  &_error {
+    background-color: rgba(239, 170, 178, 0.4);
+  }
 }
 
 .modal-message-wrap {
