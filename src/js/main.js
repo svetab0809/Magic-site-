@@ -3,6 +3,9 @@ const mobileMenu = document.querySelector('.menu-mobile')
 const menuExit = document.querySelector('.cross')
 const question = document.querySelectorAll('.question')
 
+
+
+
 function modalToggle(elem, displayValue) {
     elem.style.display = displayValue
 }
@@ -64,7 +67,7 @@ const priceSlider = new Swiper ('.price-container', {
     breakpoints: {
 
         344: {slidesPerView:1},
-        1180: {slidesPerView:2, spaceBetween: 80},
+        1180: {slidesPerView:2, spaceBetween: 80, loop: true,},
     }
 
 })
