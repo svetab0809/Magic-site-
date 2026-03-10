@@ -105,6 +105,42 @@ menuExit.addEventListener('click', () => {
     mobileMenu.style.height = '0%'
 });
 
+const forms = document.querySelectorAll('.form')
+const loader = document.querySelector('.loader-wrap')
+
+for (let form of forms) {
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+
+        loader.style.display = 'block'
+        if (modalForm.style.display === 'block') {
+            loader.style.display = 'none'
+        }
+
+        fetch('/php/mail.php', {
+            method: 'POST',
+            body: formData,
+        })
+
+            .then((response) => response.json())
+            .then((data) => {
+                if(data.success) {
+                    const successModal = document.querySelector(".modal-send")
+                    successModal.style.display = 'block'
+                }
+                else {
+                    const errorModal = document.querySelector(".modal-send_error")
+                    errorModal.style.display = 'block'
+                }
+            })
+            .catch((error) => {
+                console.log('Произошла ошибка!')
+                console.error(error)
+            })
+    });
+}
 
 
 
