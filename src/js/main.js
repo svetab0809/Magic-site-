@@ -105,7 +105,7 @@ menuExit.addEventListener('click', () => {
     mobileMenu.style.height = '0%'
 });
 
-const forms = document.querySelectorAll('.form')
+const forms = document.querySelectorAll('form')
 const loader = document.querySelector('.loader-wrap')
 
 for (let form of forms) {
@@ -115,23 +115,25 @@ for (let form of forms) {
         const formData = new FormData(this);
 
         loader.style.display = 'block'
+
         if (modalForm.style.display === 'block') {
-            loader.style.display = 'none'
+            modalForm.style.display = 'none'
         }
 
         fetch('/php/mail.php', {
             method: 'POST',
             body: formData,
         })
-
             .then((response) => response.json())
             .then((data) => {
-                if(data.success) {
+                if(data === 'ok') {
                     const successModal = document.querySelector(".modal-send")
+                    loader.style.display = 'none'
                     successModal.style.display = 'block'
                 }
                 else {
                     const errorModal = document.querySelector(".modal-send_error")
+                    loader.style.display = 'none'
                     errorModal.style.display = 'block'
                 }
             })
@@ -141,6 +143,16 @@ for (let form of forms) {
             })
     });
 }
+
+
+const buttonModal = document.querySelector('.btn__message')
+const messageModal = document.querySelector('.modal-send')
+
+buttonModal.addEventListener ('click', function () {
+    messageModal.style.display = "none"
+})
+
+
 
 
 
