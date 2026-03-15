@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <title>Гадание на картах таро на отношения в Пензе</title>
 </head>
 <body>
@@ -915,7 +916,7 @@
     </div>
 </main>
 
-<div class="modal">
+<div class="modal" data-modal>
     <form class="modal-form">
         <svg class="cross cross_modal" data-close-modal viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5113 20.5113C21.6096 19.4129 23.3904 19.4129 24.4887 20.5113L69.4886 65.5114C70.587 66.6097 70.587 68.3902 69.4886 69.4886C68.3902 70.587 66.6097 70.587 65.5114 69.4886L20.5113 24.4887C19.4129 23.3904 19.4129 21.6096 20.5113 20.5113Z" fill="#D6D4B4"/>
@@ -950,7 +951,7 @@
     </form>
 </div>
 
-<div class="modal-send">
+<div class="modal-send" data-modal>
     <div class="modal-message">
         <div class="modal-message-wrap">
     <svg class="modal-message__img" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -960,12 +961,12 @@
 
         <p class="modal-message__text">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА!</p>
         <p class="modal-message__text modal-message__text_italic">Я свяжусь с тобой в ближайшее время. </p>
-        <span class="btn btn__message">ВЕРНУТЬСЯ НА САЙТ</span>
+        <span class="btn btn__message" data-close-modal>ВЕРНУТЬСЯ НА САЙТ</span>
 </div>
     </div>
 </div>
 
-    <div class="modal-send modal-send_error">
+    <div class="modal-send modal-send_error" data-modal>
         <div class="modal-message modal-message_error">
             <div class="modal-message-wrap">
                 <svg class="modal-message__img" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -994,7 +995,7 @@
 
                 <p class="modal-message__text">ЧТО-ТО ПОШЛО НЕ ТАК...</p>
                 <p class="modal-message__text modal-message__text_italic">Попробуй ещё раз! </p>
-                <span class="btn btn__message btn__message_error">ВЕРНУТЬСЯ НА САЙТ</span>
+                <span class="btn btn__message btn__message_error" data-close-modal>ВЕРНУТЬСЯ НА САЙТ</span>
             </div>
         </div>
    </div>

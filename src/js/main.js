@@ -4,18 +4,16 @@ const menuExit = document.querySelector('.cross')
 const question = document.querySelectorAll('.question')
 
 
-
-
 function modalToggle(elem, displayValue) {
     elem.style.display = displayValue
 }
 
 const btnOpenModal = document.querySelectorAll('[data-show-modal]');
-const modalForm = document.querySelector('.modal');
+const modalWindow = document.querySelector('[data-modal]');
 
 for (let button of btnOpenModal) {
     button.addEventListener('click', () => {
-        modalToggle(modalForm, 'block');
+        modalToggle(modalWindow, 'block');
     });
 }
 
@@ -23,7 +21,8 @@ const modalClose = document.querySelectorAll ('[data-close-modal]')
 
 for (let close of modalClose) {
     close.addEventListener('click', (event) => {
-        modalToggle(modalForm, 'none')
+        const modal = event.target.closest ('[data-modal]')
+        modalToggle(modal, 'none')
     })
 }
 
@@ -107,6 +106,7 @@ menuExit.addEventListener('click', () => {
 
 const forms = document.querySelectorAll('form')
 const loader = document.querySelector('.loader-wrap')
+const modalWindowForm = document.querySelector('.modal')
 
 for (let form of forms) {
     form.addEventListener('submit', function (event) {
@@ -116,8 +116,8 @@ for (let form of forms) {
 
         loader.style.display = 'block'
 
-        if (modalForm.style.display === 'block') {
-            modalForm.style.display = 'none'
+        if (modalWindowForm.style.display === 'block') {
+            modalWindowForm.style.display = 'none'
         }
 
         fetch('/php/mail.php', {
@@ -145,12 +145,7 @@ for (let form of forms) {
 }
 
 
-const buttonModal = document.querySelector('.btn__message')
-const messageModal = document.querySelector('.modal-send')
 
-buttonModal.addEventListener ('click', function () {
-    messageModal.style.display = "none"
-})
 
 
 
