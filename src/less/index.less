@@ -1,4 +1,4 @@
-
+//Main
 .main {
 
   background-image: url("/img/main.webp");
@@ -38,6 +38,8 @@
 
 }
 
+//About person
+
 .person {
   display: flex;
   flex-direction: column;
@@ -58,17 +60,18 @@
   }
 }
 
+//Cards
+
 .help {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding-top: 30px;
 }
 
 .card-group {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .flip-container {
@@ -81,7 +84,7 @@
 
 
 .flip-container, .card, .card-back {
-  width: 400px;
+  width: 500px;
   height: 600px;
   font-family: 'Alegreya SC';
   text-align: center;
@@ -97,7 +100,8 @@
   backface-visibility: hidden;
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -5px;
+  box-sizing: border-box;
 }
 
 
@@ -110,8 +114,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 
   &__rotate {
 width: 30px;
@@ -120,19 +125,15 @@ width: 30px;
   }
 
   &__img {
-    display: block;
-    margin: 0 auto;
-    height: 250px;
-    margin-bottom: 20px;
+   margin-top: 15px;
+    margin-bottom: 15px;
+    height: 230px;
 
   }
 
   &__title {
     color: #ed94e3;
-    font-size: 34px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
+    font-size: 30px;
   }
 
   &__text {
@@ -159,8 +160,8 @@ width: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &__text {
     font-size: 20px;
@@ -173,6 +174,8 @@ width: 30px;
   display: flex;
   flex-direction: column;
 };
+
+//Results
 
 .result {
   background-color: #525064;
@@ -197,13 +200,15 @@ width: 30px;
   width: 40%;
 }
 
+
+
+//Price
+
 .services-wrap {
   display: flex;
   justify-content: space-between;
 
 }
-
-
 
 .price {
 
@@ -260,6 +265,8 @@ width: 30px;
 .price-container {
   padding-top: 45px;
   padding-bottom: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 
@@ -271,6 +278,7 @@ width: 30px;
   width: 100%;
 }
 
+//Free
 
 .promo {
   background-color: #525064;
@@ -336,6 +344,8 @@ width: 30px;
   width: 60%;
 }
 
+//Form
+
 .form-container {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -367,10 +377,10 @@ width: 30px;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 60px;
-  padding-right: 60px ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 65px;
+  padding-right: 65px ;
   font-family: 'Cormorant Garamond';
   font-weight: bold;
 
@@ -395,15 +405,14 @@ width: 30px;
     padding-bottom: 15px;
     padding-right: 25px;
     padding-left: 25px;
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 5px;
     font-family: 'Cormorant';
     font-size: 25px;
     font-weight: bold;
     color: #39384e;
-
-
   }
 
   &__message {
@@ -415,7 +424,7 @@ width: 30px;
     padding-right: 25px;
     padding-left: 25px;
     width: 90%;
-    height: 130px;
+    height: 140px;
     margin-top: 5px;
     margin-bottom: 5px;
     resize: none;
@@ -437,6 +446,12 @@ width: 30px;
   width: 100%;
 
 }
+
+.form-group_contacts {
+  width: 90%;
+}
+
+//Reviews
 
 .reviews {
   background-color: #525064;
@@ -502,6 +517,8 @@ width: 30px;
 
 }
 
+//Question-answer
+
 .answers {
   background-image: url("/img/line-phone.png");
   background-size: 100%;
@@ -563,6 +580,8 @@ width: 30px;
   justify-content: space-between;
   width: 100%;
 }
+
+//Contacts
 
 .contacts-wrap {
   margin-top: 20px;
@@ -629,9 +648,6 @@ width: 30px;
   padding-left: 25px;
   padding-right: 25px;
 
-
-
-
   &__link {
 align-content: center;
     display: flex;
@@ -678,6 +694,8 @@ align-content: center;
   display: none;
 }
 
+//Modal-form
+
 .modal {
   position: fixed;
   top: 0;
@@ -692,61 +710,74 @@ align-content: center;
 
 
 .modal-form {
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 2px solid #d6d4b4;
   border-radius: 40px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 2%;
-  padding-left: 2%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .btn_modal {
-  font-size: 20px;
+  font-size: 15px;
   width: 35%;
   padding-top: 15px;
   padding-bottom: 15px;
-
-
 }
 
 .cross_modal {
   display: flex;
   margin-left: auto;
-  width: 50px;
-  height: 50px;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 
-.title_modal {
-  font-size: 30px;
+.form-info__input_modal {
+  width: 100%;
 }
+
+.title_modal {
+  font-size: 23px;
+}
+
 
 .form-info__txt_modal {
-  font-size: 22px;
-}
-
-.form-info__data_modal {
-  font-size: 22px;
-  margin-top: 10px;
+  font-size: 20px;
 }
 
 .form-info__input_modal {
-  font-size: 22px;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 95%;
+  margin-bottom: 10px;
+
+  &::placeholder {
+    color: #2d2c40;
+  }
 }
 
 .form-info__message_modal {
-  font-size: 22px;
+  font-size: 16px;
   height: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 84%;
+
 }
 
 .form-info_modal {
-padding-right: 75px;
-  padding-left: 75px;
+padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 0;
+  padding-bottom: 10px;
 }
+
+//Modal-message
 
 .modal-message__img {
   width: 100px;
@@ -813,6 +844,8 @@ padding-right: 75px;
   font-style: italic;
   margin-bottom: 30px;
 }
+
+//Loader
 
 .loader-wrap {
   position: fixed;

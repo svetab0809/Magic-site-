@@ -111,7 +111,7 @@
                             <div class="card-wrap">
                                 <div class="card-main"><span class="card__title">КАРЬЕРА И ДЕНЬГИ</span>
                                     <img class="card__img card__img_little" src="img/moneylight.png" alt="Расклад Таро на работу и деньги"></div>
-                                <div class="card-reviews"> <span class="card__text">Стоит ли менять работу, открывать бизнес?</span>
+                                <div class="card-reviews"> <span class="card__text">Стоит ли менять работу?</span>
                                     <span class="card__text">Будет ли повышение в должности?</span>
                                     <span class="card__text">Коллеги выживают с работы.</span>
                                     <span class="card__text">Волнуюсь за финансовое положение.</span>
@@ -243,7 +243,7 @@
 
         <div class="result-info-wrap">
             <p class="result__txt">Обретешь спокойствие и уверенность, заменив тревогу пониманием.</p>
-            <p class="result__txt">Конкретное направление, план действий, куда двигаться, чтобы разрешить проблему или улучшить ситуацию.</p>
+            <p class="result__txt">План действий, куда двигаться, чтобы разрешить проблему или улучшить ситуацию.</p>
             <p class="result__txt">Увидишь свои сильные стороны, ресурсы и потенциал, которые можно использовать для достижения целей.</p>
         </div>
         </div>
@@ -815,22 +815,22 @@
             <div class="form-info">
                 <h3 class="title title_form">ЗАПОЛНИ ФОРМУ</h3>
                 <span class="form-info__txt form-info__txt_contacts">и я свяжусь с тобой в ближайшее время</span>
-                <div class="form-group">
+                <div class="form-group form-group_contacts">
                     <label class="form-info__data" for="user-name">Имя:</label>
                     <input type="text" required  class="form-info__input" name="name" id="user-name" autocomplete="name">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group form-group_contacts">
                     <label class="form-info__data" for="user-phone">Телефон:</label>
                     <input type="tel" required class="form-info__input" name="phone" id="user-phone" autocomplete="tel">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group form-group_contacts">
                     <label class="form-info__data" for="user-email">E-mail:</label>
                     <input type="email" required class="form-info__input" name="email" id="user-email" autocomplete="email">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group form-group_contacts">
                     <label class="form-info__data" for="user-message">Комментарий:</label>
                     <textarea class="form-info__message" name="message" id="user-message" cols="30" rows="10"></textarea>
                 </div>
@@ -843,7 +843,7 @@
     </div>
 </main>
 
-<div class="modal">
+<div class="modal" data-modal>
     <form class="modal-form">
         <svg class="cross cross_modal" data-close-modal viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5113 20.5113C21.6096 19.4129 23.3904 19.4129 24.4887 20.5113L69.4886 65.5114C70.587 66.6097 70.587 68.3902 69.4886 69.4886C68.3902 70.587 66.6097 70.587 65.5114 69.4886L20.5113 24.4887C19.4129 23.3904 19.4129 21.6096 20.5113 20.5113Z" fill="#D6D4B4"/>
@@ -853,33 +853,16 @@
         <div class="form-info form-info_modal">
             <h3 class="title title_form title_modal">ЗАПОЛНИ ФОРМУ</h3>
             <span class="form-info__txt form-info__txt_modal form-info__txt_contacts">и я свяжусь с тобой в ближайшее время</span>
-            <div class="form-group form-group_modal">
-                <label class="form-info__data form-info__data_modal" for="user-name">Имя:</label>
-                <input type="text" required  class="form-info__input form-info__input_modal" name="name" id="person-name" autocomplete="name">
-            </div>
-
-            <div class="form-group form-group_modal">
-                <label class="form-info__data form-info__data_modal" for="user-phone">Телефон:</label>
-                <input type="tel" required class="form-info__input form-info__input_modal" name="phone" id="person-phone" autocomplete="tel">
-            </div>
-
-            <div class="form-group form-group_modal">
-                <label class="form-info__data form-info__data_modal" for="user-email">E-mail:</label>
-                <input type="email" required class="form-info__input form-info__input_modal" name="email" id="person-email" autocomplete="email">
-            </div>
-
-            <div class="form-group form-group_modal">
-                <label class="form-info__data form-info__data_modal" for="user-message">Комментарий:</label>
-                <textarea class="form-info__message form-info__message_modal" name="message" id="person-message" cols="30" rows="10"></textarea>
-            </div>
-
+                <input type="text" required  class="form-info__input form-info__input_modal" name="name" id="person-name" autocomplete="name" placeholder="Ваше имя*">
+                <input type="tel" required class="form-info__input form-info__input_modal" name="phone" id="person-phone" autocomplete="tel" placeholder="Ваш телефон*">
+            <input type="email" required class="form-info__input form-info__input_modal" name="email" id="person-email" autocomplete="email" placeholder="Ваш e-mail">
+                <textarea class="form-info__message form-info__message_modal" name="message" id="person-message" cols="30" rows="10">Комментарий</textarea>
         </div>
         <input type="submit" class="btn btn_form btn_modal" value="НАПИСАТЬ ТАРОЛОГУ" >
     </form>
 </div>
 
-<div class="modal-send">
-    <div class="modal-message">
+<div class="modal-send" data-modal>
         <div class="modal-message-wrap">
     <svg class="modal-message__img" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M77.0833 140.288C114.478 140.288 144.792 111.058 144.792 75.0002C144.792 38.9427 114.478 9.7124 77.0833 9.7124C39.6891 9.7124 9.375 38.9427 9.375 75.0002C9.375 111.058 39.6891 140.288 77.0833 140.288Z" fill="#BEA0E2"/>
@@ -888,12 +871,12 @@
 
         <p class="modal-message__text">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА!</p>
         <p class="modal-message__text modal-message__text_italic">Я свяжусь с тобой в ближайшее время. </p>
-        <span class="btn btn__message">ВЕРНУТЬСЯ НА САЙТ</span>
+        <span class="btn btn__message" data-close-modal>ВЕРНУТЬСЯ НА САЙТ</span>
 </div>
     </div>
 </div>
 
-    <div class="modal-send modal-send_error">
+    <div class="modal-send modal-send_error" data-modal>
         <div class="modal-message modal-message_error">
             <div class="modal-message-wrap">
                 <svg class="modal-message__img" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -922,7 +905,7 @@
 
                 <p class="modal-message__text">ЧТО-ТО ПОШЛО НЕ ТАК...</p>
                 <p class="modal-message__text modal-message__text_italic">Попробуй ещё раз! </p>
-                <span class="btn btn__message btn__message_error">ВЕРНУТЬСЯ НА САЙТ</span>
+                <span class="btn btn__message btn__message_error" data-close-modal>ВЕРНУТЬСЯ НА САЙТ</span>
             </div>
         </div>
    </div>
