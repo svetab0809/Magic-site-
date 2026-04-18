@@ -16,6 +16,7 @@
   .form-info__message_modal {
     width: 80%;
 }
+
   .modal-message {
     width: 40%;
   }
@@ -169,8 +170,7 @@
   width: 360px
 }
 
-
-.review {
+  .review {
   font-size: 27px
 }
 
@@ -194,19 +194,40 @@
   }
 }
 
-.contacts-links__txt {
-  font-size: 22px
-}
-.contacts-links__img {
-  width: 50px
-}
-.contacts-links__img_phone {
-  width: 38px
+.contacts-links {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 48%;
 }
 
-.footer__copyright {
+  .contacts-links__img {
+    width: 50px;
+  }
+
+  .contacts-links__img_tg {
+    width: 45px;
+  }
+
+  .contacts-links__txt {
+    font-size: 20px;
+  }
+
+  .footer__copyright {
   font-size: 27px
 }
+
+  .form_free {
+    width: 48%;
+  }
+
+  .form_contacts {
+    width: 81%;
+  }
+
+  .form-info {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
 
 }
 
@@ -286,13 +307,6 @@
       width: 140px;
     }
 
-  .contact__img {
-    width: 48px;
-  }
-
-  .contact__img_vk {
-    width: 60px;
-  }
 
   h1 {
     font-size: 45px;
@@ -375,10 +389,6 @@ width: 120px;
     }
   }
 
-  .contacts-links__txt {
-    font-size: 20px;
-  }
-
   .form-group_contacts {
     width: 95%;
   }
@@ -393,6 +403,9 @@ width: 120px;
     padding-bottom: 15px;
   }
 
+  .title_form {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -429,29 +442,25 @@ width: 120px;
   .modal-message__text {
   font-size: 30px;
 }
-
-  .contacts-links__img {
-    width: 45px;
-  }
-
-  .contacts-links__img_phone {
-    width: 32px;
-  }
-
-  .form_free {
-    width: 42%;
-  }
-
-  .form_contacts {
-    width: 75%;
+  .form-info__txt {
+    font-size: 28px;
   }
 
   .cross_modal {
     width: 35px;
   }
 
+  .contacts-links__txt {
+    font-size: 18px;
+  }
 
+  .contacts-links__img {
+    width: 45px;
+  }
 
+  .contacts-links__img_tg {
+    width: 40px;
+  }
 }
 
 @media (max-width: 1368px) {
@@ -509,28 +518,31 @@ width: 120px;
     margin-left: 90px;
   }
 
+  .form_free {
+    width: 52%;
+  }
+
+  .form_contacts {
+    width: 84%;
+  }
+
   .form-info__data {
-    font-size: 18px;
+   font-size: 26px;
   }
-
-  .form-info__txt {
-    font-size: 18px;
-  }
-
 
   .form-info__message {
-    font-size: 18px;
+    font-size: 28px;
 
     &_modal {
-      font-size: 15px;
+      font-size: 20px;
     }
   }
 
   .form-info__input {
-    font-size: 18px;
+    font-size: 28px;
 
     &_modal {
-      font-size: 15px;
+      font-size: 20px;
     }
   }
 
@@ -570,9 +582,24 @@ width: 120px;
   .form-group_modal {
     width: 100%;
   }
+
+  .contacts-links {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .contacts-links__txt {
     font-size: 17px;
   }
+
+  .contacts-data__img {
+    width: 85%;
+  }
+
+  .contacts-form__tg {
+    font-size: 29px;
+  }
+
 }
 
 @media (max-width: 1366px) {
@@ -614,9 +641,6 @@ width: 120px;
     font-size: 23px;
   }
 
-  .contacts-links__txt {
-    font-size: 17px;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -641,6 +665,7 @@ width: 120px;
 
   .card__rotate {
     width: 22px;
+    margin-bottom: 25px;
   }
 
   .card__title {
@@ -730,7 +755,7 @@ width: 120px;
   .title {
 
     &_form {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
 
@@ -738,8 +763,20 @@ width: 120px;
     padding-bottom: 20px;
   }
 
+  .form_contacts {
+    width: 85%;
+  }
+
   .form-info {
     padding-bottom: 15px;
+  }
+
+  .form-info__txt {
+    font-size: 25px;
+  }
+
+  .form-info__data {
+    font-size: 26px;
   }
 
   .modal-form {
@@ -747,13 +784,11 @@ width: 120px;
   }
 
   .form-info__message {
-    font-size: 16px;
-    width: 85%;
-    height: 80px;
+
+    height: 110px;
+    font-size: 26px;
 
     &_modal {
-      width: 78%;
-      font-size: 14px;
       padding-top: 12px;
       padding-bottom: 12px;
     }
@@ -761,10 +796,10 @@ width: 120px;
   }
 
   .form-info__input {
-    font-size: 16px;
+
+    font-size: 26px;
 
     &_modal {
-      font-size: 14px;
       padding-top: 12px;
       padding-bottom: 12px;
     }
@@ -808,10 +843,6 @@ width: 120px;
     width: 32px;
   }
 
-  .contacts-form__tg {
-    font-size: 20px;
-  }
-
   .contacts-links__img {
     width: 35px;
   }
@@ -821,7 +852,7 @@ width: 120px;
   }
 
   .contacts-links__txt {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .menu__link {
@@ -864,6 +895,9 @@ width: 120px;
     margin-right: -100px;
   }
 
+  .modal-form {
+    width: 40%;
+  }
 
   .modal-message-wrap {
     width: 83%;
@@ -944,22 +978,38 @@ width: 120px;
 
   //Forms
 
+  .form_contacts {
+    width: 88%;
+  }
+
   .form-info__message {
-    width: 84%;
+    width: 88%;
   }
 
-  .form-group_contacts {
-    width: 100%;
+  .form-info__txt {
+    font-size: 23px;
   }
-
 
   .title_modal {
     font-size: 18px;
   }
 
+  .title_subtitle {
+    font-size: 28px;
+  }
+
+  .title_form {
+    font-size: 29px;
+  }
+
+  .form-info__input_modal {
+    font-size: 18px;
+  }
+
   .form-info__message_modal {
-    width: 76%;
+    width: 80%;
     border-width: 30px;
+    font-size: 18px;
   }
 
   .btn_modal {
@@ -1062,6 +1112,10 @@ width: 120px;
 
   .card__rotate {
     width: 18px;
+    margin-top: 10px;
+    position: relative;
+    left: 6%;
+    top: 6px;
   }
 
   .card__img_little {
@@ -1205,8 +1259,8 @@ width: 120px;
     &__img {
       width: 40px;
 
-      &_phone {
-        width: 32px;
+      &_tg {
+        width: 35px;
       }
     }
   }
@@ -1241,11 +1295,14 @@ width: 120px;
   //Form
 
   .form_free {
-    width: 50%;
+    width: 55%;
+  }
+
+  .form_contacts {
+    width: 95%;
   }
 
   .title_form {
-    font-size: 20px;
     margin-bottom: 0;
   }
 
@@ -1253,26 +1310,33 @@ width: 120px;
     font-size: 16px;
   }
 
+  .form-info__data {
+    font-size: 23px;
+  }
+
   .form-info__input {
-    font-size: 13px;
+    font-size: 23px;
+
+    &_modal {
+      font-size: 16px;
+    }
   }
 
   .form-info__message {
-    font-size: 13px;
+    font-size: 23px;
     width: 82%;
 
     &_modal {
-      width: 77%;
+      width: 78%;
+      font-size: 16px;
     }
   }
 
   .form-info__txt {
     margin-bottom: 5px;
+    font-size: 20px;
   }
 
-  .form-group_contacts {
-    width: 100%;
-  }
 
   .btn_form {
     width: 45%;
@@ -1280,7 +1344,6 @@ width: 120px;
 
   .modal-form {
     padding-top: 8px;
-    width: 32%;
   }
 
   .cross_modal {
@@ -1318,10 +1381,6 @@ width: 120px;
     font-size: 18px;
   }
 
-  .logo {
-    width: 30%;
-  }
-
   .logo__main {
     font-size: 40px;
   }
@@ -1339,8 +1398,6 @@ width: 120px;
     width: 46px;
     height: 27px;
   }
-
-
 
   .loader {
     transform: scale(.6);
@@ -1387,7 +1444,6 @@ width: 120px;
     margin-bottom: 20px;
   }
 
-
   .result__txt {
     font-size: 15px;
   }
@@ -1400,7 +1456,6 @@ width: 120px;
     width: 43%;
   }
 
-
   .promo-info__txt {
   font-size: 16px;
 }
@@ -1409,18 +1464,20 @@ width: 120px;
     font-size: 16px;
   }
 
+  //Form
+
   .form_free {
-    width: 55%;
-    }
+    width: 57%;
+  }
 
   .form-info {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 10px;
   }
 
   .form-info__txt {
-    font-size: 16px;
+    font-size: 18px;
 
     &_modal {
       font-size: 12px;
@@ -1428,36 +1485,56 @@ width: 120px;
   }
 
   .form-info__input {
-    font-size: 11px;
     margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     &_modal {
       margin-bottom: 5px;
+      font-size: 15px;
     }
   }
 
   .form-info__message {
-    font-size: 11px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 83%;
 
     &_modal {
-      width: 74%;
+      font-size: 15px;
+      height: 70px;
     }
   }
 
   .title {
 
     &_form {
-      font-size: 20px;
+      font-size: 23px;
   }
 
    &_modal {
      font-size: 15px;
    }
+
+    &_subtitle {
+      font-size: 24px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
   }
 
   .form_contacts {
   margin-top: 15px;
-    width: 95%;
+    width: 100%;
+  }
+
+  .contacts-form__tg {
+    margin-bottom: 5px;
+  }
+
+  .contacts-links {
+    width: 32%;
   }
 
   .contacts-data__img {
@@ -1478,7 +1555,7 @@ width: 120px;
 
 
   .modal-form {
-    width: 35%;
+    margin-top: 10px;
   }
 
   .form-info_modal {
@@ -1493,9 +1570,20 @@ width: 120px;
     width: 44px;
   }
 
+  .form-info__data {
+    font-size: 21px;
+  }
+
+  .form-info__input {
+    font-size: 20px;
+  }
+
+  .form-info__message {
+    font-size: 20px;
+  }
+
   .form-info__message_modal {
     height: 55px;
-    width: 72%;
   }
 
   .result__txt {
@@ -1542,28 +1630,13 @@ width: 120px;
     font-size: 15px;
   }
 
-  .promo-info__txt {
-    font-size: 15px;
-  }
-
-  .form_free {
-    width: 55%;
-  }
-
   .review__photo {
     width: 190px;
   }
 
-  .title  {
-
-    &_form {
-      font-size: 21px;
-    }
-
-    &_modal {
+  .title_modal {
       font-size: 15px;
     }
-  }
 
   .contacts-form__tg {
     font-size: 18px;
@@ -1588,15 +1661,19 @@ width: 120px;
 @media (max-width: 912px) {
 
   .modal-form {
-    width: 50%;
+    width: 40%;
+
   }
 
   .form-info__input_modal {
-    width: 85%;
+    width: 95%;
+    font-size: 14px;
   }
 
   .form-info__message_modal {
     height: 80px;
+    width: 78%;
+    font-size: 14px;
   }
 
   .btn_modal {
@@ -1620,18 +1697,7 @@ width: 120px;
   }
 
   .modal-form {
-    width: 40%;
     padding-bottom: 10px;
-  }
-
-  .form-info__input_modal {
-    width: 90%;
-    font-size: 10px;
-  }
-
-  .form-info__message_modal {
-    height: 60px;
-    font-size: 10px;
   }
 
   .btn_form {
@@ -1653,19 +1719,12 @@ width: 120px;
     font-size: 14px;
   }
 
-  .title {
-
-    &_form {
-      font-size: 20px;
-    }
-
-    &_modal {
-      font-size: 15px;
-    }
+  .title_modal {
+    font-size: 15px;
   }
 
   .contacts-links {
-    width: 32%;
+    width: 35%;
   }
 
   .btn__price {
@@ -1731,6 +1790,7 @@ width: 120px;
   .card__rotate {
     width: 15px;
     margin-top: 12px;
+    left: 8%;
   }
 
   .modal-message {
@@ -1760,8 +1820,6 @@ width: 120px;
 
 .modal-form {
   padding-top: 5px;
-  width: 33%;
-  margin-top: 8px;
 }
 
  .cross_modal {
@@ -1772,22 +1830,19 @@ width: 120px;
    font-size: 12px;
  }
 
- .form-info__input_modal {
-   font-size: 8px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   width: 98%;
-   border-radius: 30px;
- }
+  .form-info__input_modal {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
- .form-info__message_modal {
-   border-radius: 15px;
-   width: 75%;
-   height: 38px;
-   font-size: 8px;
-   padding-top: 10px;
-   padding-bottom: 10px;
- }
+  .form-info__message_modal {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+  }
+
 
  .btn_modal {
    font-size: 8px;
@@ -1887,7 +1942,7 @@ width: 120px;
   }
 
  .modal-form {
-   width: 40%;
+   width: 45%;
  }
 
   .btn__price {
@@ -1919,60 +1974,58 @@ width: 120px;
         height: 290px;
     }
 
-  .form_free {
-    width: 65%;
-  }
-
   .title_form {
     margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .form_free {
+    width: 60%;
+  }
+
+  .form_contacts {
+    width: 100%;
   }
 
   .form-info__data {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .form-info__input {
-    font-size: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    font-size: 20px;
     margin-bottom: 0;
     width: 97%;
 
     &_modal {
-      font-size: 13px;
+      font-size: 15px;
       margin-top: 6px;
     }
   }
 
   .form-info__message {
-    font-size: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    font-size: 20px;
     margin-bottom: 0;
 
     &_modal {
-      font-size: 13px;
+      font-size: 15px;
       margin-top: 6px;
-      height: 50px;
+      height: 80px;
       border-radius: 30px;
-      width: 80%;
+      width: 78%;
     }
   }
 
   .form-info__txt {
-    font-size: 15px;
-  }
-
-  .title_form {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn_modal {
     font-size: 10px;
   }
 
-  .form_contacts {
-    width: 100%;
+  .contacts-form {
+    width: 65%;
+    margin-top: 10px;
   }
 
 .form-group_contacts {
@@ -2023,13 +2076,16 @@ width: 120px;
     width: 50%;
   }
 
-  .form_contacts {
-    width: 100%;
+  .form-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
-  .form_free {
-    width: 60%;
+  .form-info__message {
+    height: 90px;
+    width: 82%;
   }
+
 
   .modal-form {
     padding-top: 10px;
@@ -2040,8 +2096,10 @@ width: 120px;
   }
 
   .form-info__message_modal {
-    height: 45px;
-    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 70px;
+    width: 80%;
   }
 
   .form-info__txt_modal {
@@ -2049,7 +2107,8 @@ width: 120px;
   }
 
   .form-info__input_modal {
-    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .btn_modal {
@@ -2079,10 +2138,6 @@ width: 120px;
   }
 
   .title {
-
-    &_form {
-      font-size: 19px;
-    }
 
     &_modal {
       font-size: 15px;
@@ -2122,10 +2177,6 @@ width: 120px;
   .question__answer {
     font-size: 16px;
   }
-
-  .form_contacts {
-    width: 96%;
-    }
 
   .contacts-links__txt {
     font-size: 16px;
@@ -2181,9 +2232,12 @@ width: 120px;
     height: 210px;
   }
 
-
   .card__title {
     font-size: 18px;
+  }
+
+  .card__rotate {
+    top: 13px;
   }
 
   .modal-form {
@@ -2302,18 +2356,6 @@ width: 120px;
     background-size: contain;
   }
 
-  .title_form {
-    margin-bottom: 1px;
-  }
-
-  .form-info__txt {
-    font-size: 17px;
-  }
-
-  .form-info__data {
-    font-size: 19px;
-    }
-
   .review__photo {
     width: 180px;
   }
@@ -2368,37 +2410,36 @@ width: 120px;
   }
 
   .title_form {
+    font-size: 20px;
     text-align: center;
   }
 
   .form_contacts {
-    width: 100%;
     margin-top: 10px;
     }
 
-  .form-info__txt {
-    font-size: 15px;
-  }
-
   .form-info__data {
-    font-size: 17px;
-    margin-top: 5px;
+    font-size: 18px;
   }
 
   .form-info__input {
    padding-top: 8px;
     padding-bottom: 8px;
+    font-size: 18px;
 
     &_modal {
-      font-size: 12px;
+      font-size: 15px;
       width: 96%;
     }
   }
 
-  .form-info__message_modal {
-    font-size: 12px;
-    height: 50px;
-    width: 78%;
+  .form-info__message {
+    font-size: 18px;
+
+    &_modal {
+      font-size: 15px;
+      height: 70px;
+    }
   }
 
   .contacts-links__txt {
@@ -2408,8 +2449,8 @@ width: 120px;
   .contacts-links__img {
     width: 35px;
 
-    &__phone {
-      width: 28px;
+    &__tg {
+      width: 30px;
     }
   }
 
@@ -2568,28 +2609,16 @@ width: 120px;
     font-size: 18px;
   }
 
-  .title_form {
-    font-size: 20px;
-  }
-
  .form_free {
-   width: 50%;
+   width: 60%;
  }
 
  .form_contacts {
    width: 70%;
  }
 
-  .form-info__input {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-  }
-
-  .form-info__message {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 81%;
+  .form-info__input_modal {
+      width: 97%;
   }
 
   .btn_form {
@@ -2613,6 +2642,10 @@ width: 120px;
     }
   }
 
+  .contacts-links {
+    width: 30%;
+  }
+
   .menu__link_footer {
     font-size: 11px;
   }
@@ -2630,7 +2663,6 @@ width: 120px;
     font-size: 15px;
   }
 
-
   .btn__price {
     font-size: 12px;
     margin-left: 180px;
@@ -2644,9 +2676,8 @@ width: 120px;
     width: 150px;
   }
 
-
   .modal-form {
-    width: 45%;
+    width: 50%;
   }
 
   .title_modal {
@@ -2659,6 +2690,10 @@ width: 120px;
 
   .phone_header {
     font-size: 14px;
+  }
+
+  .form_contacts {
+    width: 75%;
   }
 
   .modal-message {
@@ -2684,7 +2719,6 @@ width: 120px;
     font-size: 10px;
   }
 
-
   .modal-message__img {
     width: 60px;
     height: 60px;
@@ -2700,12 +2734,16 @@ width: 120px;
  }
 
   .form-info__input_modal {
-    font-size: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
   }
 
   .form-info__message_modal {
-    font-size: 10px;
-    height: 40px;
+    height: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
   }
 
   .btn_modal {
@@ -2713,17 +2751,9 @@ width: 120px;
     width: 45%;
   }
 
-  .form-info__txt {
-    font-size: 14px;
-
-    &_modal {
+  .form-info__txt_modal {
       font-size: 10px;
     }
-  }
-
-  .contacts-links {
-    width: 35%;
-  }
 
   .price {
     height: 270px;
@@ -2865,52 +2895,30 @@ width: 120px;
   .contacts-form {
     display: flex;
     justify-content: center;
+    margin-top: 0;
   }
 
   .form_contacts {
     width: 82%;
   }
 
-  .form_free {
-    width: 60%;
-  }
-
-
-  .form-info__txt {
-    font-size: 17px;
-
-    &_modal {
+  .form-info__txt_modal {
       font-size: 15px;
-    }
   }
 
-  .title {
-
-    &_form {
-      font-size: 24px;
-    }
-
-    &_modal {
+  .title_modal {
       font-size: 18px;
-    }
-
   }
 
-  .form-info__data {
-    font-size: 19px;
-  }
-
-  .form-info__input {
-    font-size: 19px;
-
-    &_modal {
+  .form-info__input_modal {
       font-size: 15px;
     }
-  }
+
 
   .form-info__message_modal {
       font-size: 15px;
     height: 70px;
+    width: 80%;
   }
 
   .btn_modal {
@@ -2979,6 +2987,9 @@ width: 530px;
 
   .card__rotate {
     width: 13px;
+    margin-top: 10px;
+    top: 6px;
+    left: 9%;
   }
 
   .modal-message-wrap {
@@ -2998,23 +3009,22 @@ width: 530px;
   }
 
   .form-info__txt_modal {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 3px;
   }
 
   .form-info__data_modal {
-    font-size: 10px;
+    font-size: 12px;
     }
 
   .form-info__input_modal {
-    font-size: 10px;
     margin-top: 3px;
     margin-bottom: 3px;
+    font-size: 13px;
   }
 
   .form-info__message_modal {
-    font-size: 10px;
-    height: 48px;
+    font-size: 13px;
     margin-top: 3px;
     margin-bottom: 3px;
     width: 78%;
@@ -3095,11 +3105,13 @@ width: 530px;
   }
 
   .contacts-links {
-    width: 38%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 32%;
   }
 
-  .contacts-links__img_phone {
-    width: 28px;
+  .phone_header {
+    font-size: 13px;
   }
 
   .phone_footer {
@@ -3153,6 +3165,11 @@ width: 530px;
 
   .card-back__text {
     font-size: 10px;
+  }
+
+  .card__rotate {
+    left: 5%;
+    top: 8px;
   }
 
   .price {
@@ -3358,6 +3375,7 @@ overflow: hidden;
   .form_free {
     background-image: url("/img/taro-momile.png");
     background-size: cover;
+    width: 70%;
   }
 
   .promo-condition__wrap {
@@ -3407,28 +3425,18 @@ overflow: hidden;
     }
 
     &__answer {
-      font-size: 13px;
+      font-size: 15px;
     }
   }
 
-  .title {
-
-    &_form {
-      font-size: 22px;
-    }
-
-    &_modal {
+  .title_modal {
       font-size: 18px;
     }
-  }
 
-  .form-info__data {
-    font-size: 17px;
-  }
 
   .form-info__input {
-    font-size: 17px;
-    
+    width: 100%;
+
     &_modal {
       font-size: 15px;
       width: 85%;
@@ -3436,25 +3444,26 @@ overflow: hidden;
   }
 
   .form-info__message {
-    font-size: 17px;
+   height: 80px;
 
     &_modal {
       font-size: 15px;
-      height: 80px;
       width: 71%;
     }
   }
 
-  .form-info__txt {
-    font-size: 16px;
-  }
-
-  .contacts-links {
-    margin-bottom: 10px;
-  }
 
   .contacts-links__txt {
-    font-size: 14px;
+    margin-left: 12px;
+    font-size: 13px;
+  }
+
+  .contacts-links__img {
+    width: 33px;
+  }
+
+  .contacts-links__img_tg {
+    width: 28px;
   }
 
   .menu_footer {
@@ -3578,7 +3587,6 @@ overflow: hidden;
   }
 
   .person__img_lady {
-
     top: 10px
   }
 
@@ -3627,7 +3635,11 @@ overflow: hidden;
 
   .card__rotate {
     width: 10px;
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    top: -4px;
+    left: 4%;
+
   }
 
   .card-back__text {
@@ -3662,7 +3674,7 @@ overflow: hidden;
   }
 
   .form_free {
-  width: 82%;
+  width: 85%;
 }
 
   .form-container {
@@ -3689,6 +3701,10 @@ overflow: hidden;
   font-size: 20px;
 }
 
+  .question__txt {
+    width: 60%;
+  }
+
   .title_form {
     font-size: 18px;
   }
@@ -3702,7 +3718,7 @@ overflow: hidden;
   }
 
   .form-info__txt {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .form-info__data {
@@ -3710,21 +3726,21 @@ overflow: hidden;
   }
 
 .form-info__input {
-    font-size: 16px;
+    font-size: 17px;
 
   &_modal {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   }
 
   .form-info__message {
-    font-size: 16px;
+    font-size: 17px;
     width: 80%;
 
     &_modal {
       width: 68%;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -3734,6 +3750,10 @@ overflow: hidden;
 
   .contacts-links {
     width: 50%;
+  }
+
+  .contacts-links__txt {
+    font-size: 14px;
   }
 
   .menu__link_footer {
@@ -3753,24 +3773,24 @@ overflow: hidden;
   }
 
  .price {
-   width: 52%;
+   width: 60%;
    padding-bottom: 10px;
  }
 
   .price__info {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .price__title {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .price__price {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .price__bonus {
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 0;
   }
 
@@ -3877,8 +3897,8 @@ overflow: hidden;
     font-size: 18px;
   }
 
-  .question__txt {
-    font-size: 14px;
+  .form_free {
+    width: 87%;
   }
 
   .contacts-form__tg {
@@ -3923,11 +3943,15 @@ overflow: hidden;
 }
 
 .price {
-  height: 250px;
+  height: 260px;
+  width: 65%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.price__bonus {
-  font-size: 12px;
+.price__price {
+  margin-top: 50px;
+
 }
 
 }
@@ -3950,12 +3974,24 @@ overflow: hidden;
     margin-bottom: 0px;
   }
 
+  .card {
+    left: -33px;
+  }
+
+  .card-back {
+    left: 33px;
+  }
+
   .btn_form {
     width: 47%;
   }
 
   .form-info__txt_modal {
     width: 83%;
+  }
+
+  .form-info__txt_contacts {
+    width: 100%;
   }
 }
 
@@ -3998,46 +4034,58 @@ overflow: hidden;
     width: 345px;
   }
 
+  .card {
+    left: -31px;
+  }
+
+  .card-back {
+    left: 31px;
+  }
+
+  .card__rotate {
+    top: -6px;
+  }
 
   .result__txt {
     font-size: 11px;
   }
 
+  .form_free {
+    width: 90%;
+  }
+
+  .form_contacts {
+    width: 93%;
+  }
+
+  .form-info {
+    padding-right: 25px;
+    padding-left: 25px;
+
+    &_modal {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
 
   .modal-form {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
-  .form-info__txt {
-    font-size: 14px;
-
-    &_modal {
-      width: 81%;
-      font-size: 13px;
-    }
+  .form-info__txt_modal {
+      width: 51%;
+      font-size: 15px;
   }
 
-  .form-info__data {
-    font-size: 15px;
+  .form-info__input_modal {
+    width: 90%;
   }
 
-  .form-info__input {
-    font-size: 15px;
+  .form-info__message_modal {
 
-    &_modal {
-      font-size: 13px;
-    }
-  }
-
-  .form-info__message {
-    font-size: 15px;
-
-    &_modal {
-      font-size: 13px;
-      width: 67%;
+    width: 71%;
       height: 60px;
-    }
   }
 
   .btn_modal {
@@ -4053,9 +4101,6 @@ overflow: hidden;
     margin-top: 10px;
   }
 
-  .title_form {
-    font-size: 17px;
-  }
 
   .contacts-data__img {
     width: 75%;
@@ -4066,20 +4111,7 @@ overflow: hidden;
 }
 
   .price {
-    width: 55%;
-  }
-
-  .price__title {
-    font-size: 15px;
-  }
-
-  .price__info {
-    font-size: 15px;
-  }
-
-  .price__price {
-    font-size: 17px;
-
+    width: 70%;
   }
 
   .btn__price {
@@ -4154,6 +4186,10 @@ overflow: hidden;
 
   .title {
   font-size: 20px;
+
+    &_subtitle {
+      font-size: 18px;
+    }
 }
 
   .person__img {
@@ -4170,6 +4206,14 @@ overflow: hidden;
 
   .card, .card-back, .flip-container {
     width: 330px;
+  }
+
+  .card {
+    left: -27px;
+  }
+
+  .card-back {
+    left: 27px;
   }
 
   .card__text {
@@ -4193,30 +4237,14 @@ overflow: hidden;
     height: 180px;
   }
 
-  .form_free {
-    width: 85%;
-  }
-
   .title {
     &_modal {
       font-size: 16px;
     }
 
     &_form {
-      font-size: 17px;
+      font-size: 18px;
     }
-  }
-
-  .form-info__data {
-    font-size: 14px;
-  }
-
-  .form-info__input{
-    font-size: 14px;
-  }
-
-  .form-info__message {
-    font-size: 14px;
   }
 
   .form-info__txt {
@@ -4239,22 +4267,26 @@ overflow: hidden;
     width: 30px;
   }
 
-  .contacts-links__img_phone {
-    width: 24px;
+  .contacts-links__img_tg{
+    width: 25px;
   }
 
   .contacts-links__txt {
     margin-left: 10px;
+    font-size: 12px;
   }
 
   .price {
-    width: 60%;
+    width: 75%;
   }
-
 
  .btn__price {
    margin-left: 42px;
  }
+
+  .form_contacts {
+    width: 95%;
+  }
 
 }
 
@@ -4324,6 +4356,19 @@ overflow: hidden;
     height: 130px;
   }
 
+  .card {
+    left: -32px;
+  }
+
+  .card-back {
+    left: 32px;
+  }
+
+  .card__rotate {
+    top: 3px;
+    left: 3%;
+  }
+
   .card__title {
     font-size: 10px;
   }
@@ -4341,13 +4386,9 @@ overflow: hidden;
     font-size: 11px;
   }
 
-  .price {
-    width: 62%;
-  }
-
 
   .btn__price {
-    margin-left: 40px;
+    margin-left: 44px;
   }
 
   .title_free {
@@ -4371,8 +4412,17 @@ overflow: hidden;
     height: 160px;
   }
 
+  .price-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .form_free {
-    width: 102%;
+    width: 100%;
+  }
+
+  .form_contacts {
+    width: 98%;
   }
 
   .form-info__input {
@@ -4380,10 +4430,9 @@ overflow: hidden;
   width: 97%;
 
   &_modal {
-    width: 80%;
+    width: 90%;
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 13px;
   }
 }
 
@@ -4392,11 +4441,10 @@ overflow: hidden;
     height: 100px;
 
     &_modal {
-      width: 62%;
+      width: 71%;
       padding-top: 8px;
       padding-bottom: 8px;
       height: 70px;
-      font-size: 13px;
     }
   }
 
@@ -4418,10 +4466,6 @@ overflow: hidden;
 
   .title_form {
     font-size: 17px;
-  }
-
-  .contacts-links__txt {
-    font-size: 12px;
   }
 
   .menu__link_footer {
@@ -4449,6 +4493,18 @@ overflow: hidden;
 }
 
 @media (max-width: 344px) {
+
+  .card {
+    left: -41px;
+  }
+
+  .card-back {
+    left: 41px;
+  }
+
+  .card__rotate {
+    left: 5%;
+  }
 
   .price-container {
     padding-top: 15px;
@@ -4493,29 +4549,25 @@ overflow: hidden;
     font-size: 7px;
   }
 
-  .form_free {
-    width: 90%;
-  }
 
   .form-info__input {
     width: 100%;
-
-    &_modal {
-      width: 93%;
-    }
   }
 
   .form-info__message {
-    width: 76%;
+    width: 80%;
 
     &_modal {
-      width: 74%;
+      width: 78%;
     }
   }
 
-  .form-info__txt_contacts {
-    width: 100%;
-    font-size: 12px;
+  .contacts-form {
+    width: 102%;
+  }
+
+  .contacts-links__txt {
+    font-size: 11px;
   }
 
   .btn_modal {
