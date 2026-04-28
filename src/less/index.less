@@ -377,6 +377,7 @@ width: 30px;
   border: 2px solid;
   border-color: #D6D4B4;
   padding-bottom: 40px;
+  box-sizing: border-box;
 
   &_contacts {
     width: 75%;
@@ -391,8 +392,8 @@ width: 30px;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 65px;
-  padding-right: 65px ;
+  padding-left: 50px;
+  padding-right: 50px ;
   font-family: 'Cormorant Garamond';
   font-weight: bold;
 
@@ -424,7 +425,11 @@ width: 30px;
     font-family: 'Cormorant';
     font-size: 32px;
     font-weight: bold;
-    color: #39384e;
+    color: #2d2c40;
+
+    &::placeholder {
+      color: #2d2c40;
+    }
   }
 
   &__message {
@@ -435,15 +440,19 @@ width: 30px;
     padding-bottom: 10px;
     padding-right: 25px;
     padding-left: 25px;
-    width: 90%;
+    width: 91%;
     height: 140px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     resize: none;
     font-family: 'Cormorant';
     font-size: 32px;
     font-weight: bold;
-    color: #39384e;
+    color: #2d2c40;
+
+    &::placeholder {
+      color: #2d2c40;
+    }
 
 
     &_contacts {
