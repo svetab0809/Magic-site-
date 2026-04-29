@@ -83,15 +83,12 @@
 }
 
 
-
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
 };
 
 
 .flip-container, .card, .card-back {
-  //width: 500px;
-  //height: 600px;
   font-family: 'Alegreya SC';
   text-align: center;
 }
@@ -114,9 +111,8 @@
   width: 100%;
   height: 100%;
   transform: rotateY(0deg);
-  //top: 0;
-  //left: -5px;
 }
+
 .card {
   z-index: 2;
   background-color: rgba(125, 121, 125, 0.3);
@@ -392,8 +388,8 @@ width: 30px;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px ;
+  padding-left: 60px;
+  padding-right: 60px ;
   font-family: 'Cormorant Garamond';
   font-weight: bold;
 
@@ -428,49 +424,17 @@ width: 30px;
     color: #2d2c40;
 
     &::placeholder {
-      color: #3f3e5a;
+      color: rgba(63, 62, 90, 0.8);
+    }
+
+
+    &_textarea {
+ height: 200px;
+      resize: none;
     }
   }
-
-  &__message {
-    border: none;
-    border-radius: 30px;
-    background-color: rgba(214, 212, 180, 0.5);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 25px;
-    padding-left: 25px;
-    width: 91%;
-    height: 140px;
-    margin-top: 5px;
-    margin-bottom: 8px;
-    resize: none;
-    font-family: 'Cormorant';
-    font-size: 32px;
-    font-weight: bold;
-    color: #2d2c40;
-
-    &::placeholder {
-      color: #3f3e5a;
-    }
-
-
-    &_contacts {
-      height: 120px;
-    }
-
-  }
 }
 
-.form-group {
-  align-content: flex-start;
-  width: 100%;
-
-}
-
-.form-group_contacts {
-  width: 90%;
-}
 
 //Reviews
 
@@ -750,12 +714,12 @@ width: 30px;
 }
 
 .title_modal {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 
 .form-info__txt_modal {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .form-info__input_modal {
@@ -765,23 +729,12 @@ width: 30px;
   width: 95%;
   margin-bottom: 10px;
 
-  &::placeholder {
-    color: #3f3e5a;
+  &-message {
+    height: 150px;
+    resize: none;
   }
 }
 
-.form-info__message_modal {
-  font-size: 22px;
-  height: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 84%;
-
-  &::placeholder {
-    color: #3f3e5a;
-  }
-
-}
 
 .form-info_modal {
 padding-right: 60px;

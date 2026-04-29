@@ -418,23 +418,10 @@
             <div class="form-info">
                 <h3 class="title title_form">ЗАПОЛНИ ФОРМУ</h3>
                 <span class="form-info__txt">получи ответ на вопрос бесплатно</span>
-
-                <div class="form-group">
-                    <input type="text" placeholder="Ваше имя*" required class="form-info__input" name="name" id="name" autocomplete="name">
-                </div>
-
-                <div class="form-group">
+                <input type="text" placeholder="Ваше имя*" required class="form-info__input" name="name" id="name" autocomplete="name">
                 <input type="tel" placeholder="Номер телефона*" required class="form-info__input" name="phone" id="phone" autocomplete="tel" >
-                </div>
-
-                <div class="form-group">
                 <input type="email" placeholder="Ваш e-mail" required class="form-info__input" name="email" id="email" autocomplete="email">
-                </div>
-
-                <div class="form-group">
-                    <textarea placeholder="Ваш вопрос" class="form-info__message" name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-
+                    <textarea placeholder="Ваш вопрос" class="form-info__input form-info__input_textarea" name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <input type="submit" class="btn btn_form" value="ЗАДАТЬ ВОПРОС">
         </form>
@@ -618,11 +605,7 @@
         </svg>
     </div>
 
-
-
-
-
-    <h3 class="title" id="faq">ОТВЕТЫ НА ВОПРОСЫ</h3>
+   <h3 class="title" id="faq">ОТВЕТЫ НА ВОПРОСЫ</h3>
     <div class="answers">
 
         <div class="question">
@@ -837,22 +820,10 @@
             <div class="form-info">
                 <h3 class="title title_form">ЗАПОЛНИ ФОРМУ</h3>
                 <span class="form-info__txt form-info__txt_contacts">и я свяжусь с тобой в ближайшее время</span>
-                <div class="form-group form-group_contacts">
                     <input type="text" placeholder="Ваше имя*" required  class="form-info__input" name="name" id="user-name" autocomplete="name">
-                </div>
-
-                <div class="form-group form-group_contacts">
                     <input type="tel" placeholder="Номер телефона*" required class="form-info__input" name="phone" id="user-phone" autocomplete="tel">
-                </div>
-
-                <div class="form-group form-group_contacts">
                     <input type="email" placeholder="Ваш e-mail" required class="form-info__input" name="email" id="user-email" autocomplete="email">
-                </div>
-
-                <div class="form-group form-group_contacts">
-                    <textarea class="form-info__message" placeholder="Комментарий" name="message" id="user-message" cols="30" rows="10"></textarea>
-                </div>
-
+                    <textarea class="form-info__input form-info__input_textarea" placeholder="Комментарий" name="message" id="user-message" cols="30" rows="10"></textarea>
             </div>
             <input type="submit" class="btn btn_form" value="НАПИСАТЬ ТАРОЛОГУ">
         </form>
@@ -870,11 +841,11 @@
 
         <div class="form-info form-info_modal">
             <h3 class="title title_form title_modal">ЗАПОЛНИ ФОРМУ</h3>
-            <span class="form-info__txt form-info__txt_modal form-info__txt_contacts">и я свяжусь с тобой в ближайшее время</span>
+            <span class="form-info__txt form-info__txt_modal">и я свяжусь с тобой в ближайшее время</span>
                 <input type="text" required  class="form-info__input form-info__input_modal" name="name" id="person-name" autocomplete="name" placeholder="Ваше имя*">
                 <input type="tel" required class="form-info__input form-info__input_modal" name="phone" id="person-phone" autocomplete="tel" placeholder="Ваш телефон*">
             <input type="email" required class="form-info__input form-info__input_modal" name="email" id="person-email" autocomplete="email" placeholder="Ваш e-mail">
-                <textarea class="form-info__message form-info__message_modal" name="message" id="person-message" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                <textarea class="form-info__input form-info__input_modal form-info__input_modal-message" name="message" id="person-message" cols="30" rows="10" placeholder="Комментарий"></textarea>
         </div>
         <input type="submit" class="btn btn_form btn_modal" value="НАПИСАТЬ ТАРОЛОГУ" >
     </form>

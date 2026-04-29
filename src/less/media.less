@@ -5,17 +5,10 @@
     left: 56%;
   }
 
+
   .form-info__txt_modal {
-    font-size: 18px;
+    font-size: 20px;
   }
-
-  .form-info__message {
-    width: 90%;
-  }
-
-  .form-info__message_modal {
-    width: 80%;
-}
 
   .modal-message {
     width: 40%;
@@ -229,6 +222,15 @@
   .form-info {
     padding-right: 55px;
     padding-left: 55px;
+
+    &_modal {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+
+  .form-info__input_modal-message {
+    height: 130px;
   }
 
 }
@@ -239,7 +241,6 @@
     width: 86%;
   }
 
-
   .modal-send {
     margin-left: -120px;
     margin-right: -120px;
@@ -248,6 +249,10 @@
   .modal {
     margin-left: -120px;
     margin-right: -120px;
+  }
+
+  .modal-form {
+    width: 33%;
   }
 
 
@@ -330,10 +335,13 @@
     font-size: 30px;
 
     &_modal {
-      font-size: 24px;
+      font-size: 25px;
+    }
+
+    &_form {
+      font-size: 35px;
     }
   }
-
 
   .person__text {
     font-size: 20px;
@@ -342,6 +350,10 @@
 
   .person__img {
     width: 220px;
+  }
+
+  .card-group {
+    margin-bottom: 20px;
   }
 
   .result__txt {
@@ -410,13 +422,35 @@ width: 120px;
     padding-bottom: 15px;
   }
 
-  .title_form {
-    font-size: 35px;
-  }
 }
 
 @media (max-width: 1440px) {
 
+  //Modal
+
+  .title_modal {
+    font-size: 25px;
+  }
+
+  .form-info_modal {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form-info__input {
+    font-size: 28px;
+  }
+
+  .form-info__input_modal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .form-info__input_modal-message {
+    height: 110px;
+  }
 
   .btn__price {
     margin-left: 94px;
@@ -430,6 +464,10 @@ width: 120px;
   .card {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .card-group {
+    margin-bottom: 25px;
   }
 
   .card-back {
@@ -449,11 +487,7 @@ width: 120px;
   font-size: 30px;
 }
   .form-info__txt {
-    font-size: 28px;
-  }
-
-  .form-info__message {
-    width: 89%;
+    font-size: 20px;
   }
 
   .cross_modal {
@@ -500,12 +534,6 @@ width: 120px;
     font-size: 23px;
   }
 
-  .form-info_modal {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-
   .modal-message__text {
     font-size: 28px;
   }
@@ -540,21 +568,6 @@ width: 120px;
    font-size: 26px;
   }
 
-  .form-info__message {
-    font-size: 28px;
-
-    &_modal {
-      font-size: 20px;
-    }
-  }
-
-  .form-info__input {
-    font-size: 28px;
-
-    &_modal {
-      font-size: 20px;
-    }
-  }
 
   .flip-container {
     width: 350px;
@@ -804,6 +817,10 @@ width: 120px;
 
   .form-info__txt {
     font-size: 25px;
+
+    &_modal {
+      font-size: 22px;
+    }
   }
 
   .form-info__data {
@@ -814,38 +831,17 @@ width: 120px;
     width: 35%;
   }
 
-  .form-info__message {
-
-    width: 88%;
-    height: 110px;
-    font-size: 26px;
-
-    &_modal {
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-
-  }
-
   .form-info__input {
-
     font-size: 26px;
 
-    &_modal {
-      padding-top: 12px;
-      padding-bottom: 12px;
+    &_textarea {
+      height: 180px;
     }
 
-  }
+    &_modal {
+      font-size: 23px;
+    }
 
-  .form-info__txt_modal {
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-
-  .form-info_modal {
-    padding-left: 45px;
-    padding-right: 45px;
   }
 
 
@@ -1014,38 +1010,33 @@ width: 120px;
     width: 88%;
   }
 
-  .form-info__message {
-    width: 87%;
-  }
-
   .form-info__txt {
     font-size: 23px;
+
+    &_modal {
+      font-size: 20px;
+    }
   }
 
-  .title_modal {
-    font-size: 18px;
-  }
 
   .title_subtitle {
     font-size: 28px;
   }
 
-  .title_form {
-    font-size: 29px;
+  .title {
+
+    &_form {
+      font-size: 29px;
+    }
+
+    &_modal {
+      font-size: 23px;
+    }
   }
+
 
   .form-info__input_modal {
-    font-size: 18px;
-  }
-
-  .form-info__message_modal {
-    width: 80%;
-    border-width: 30px;
-    font-size: 18px;
-  }
-
-  .btn_modal {
-    font-size: 10px;
+    font-size: 20px;
   }
 
 }
@@ -1229,7 +1220,6 @@ display: flex;
     align-items: center;
   }
 
-
   .review {
     font-size: 17px;
     margin-top: 20px;
@@ -1339,7 +1329,7 @@ display: flex;
   }
 
   .form_contacts {
-    width: 95%;
+    width: 100%;
   }
 
   .title_form {
@@ -1347,7 +1337,11 @@ display: flex;
   }
 
   .title_modal {
-    font-size: 16px;
+    font-size: 22px;
+  }
+
+  .title_subtitle {
+    font-size: 24px;
   }
 
   .form-info {
@@ -1363,19 +1357,14 @@ display: flex;
     font-size: 23px;
 
     &_modal {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
-  .form-info__message {
-    font-size: 23px;
-    width: 86%;
-
-    &_modal {
-      width: 78%;
-      font-size: 16px;
-    }
+  .form-info__input_textarea {
+    height: 160px;
   }
+
 
   .form-info__txt {
     margin-bottom: 5px;
@@ -1395,22 +1384,12 @@ display: flex;
     width: 25px;
   }
 
-  .form-info__txt_modal {
-    font-size: 14px;
-  }
 
   .form-info_modal {
     padding-left: 35px;
     padding-right: 35px;
   }
 
-  .form-info__input_modal {
-    width: 93%;
-  }
-
-  .form-info__message_modal {
-    width: 75%;
-  }
 
   .btn_modal {
     font-size: 10px;
@@ -1483,8 +1462,6 @@ display: flex;
     padding-bottom: 12px;
   }
 
-
-
   .result__txt {
     font-size: 15px;
   }
@@ -1515,36 +1492,28 @@ display: flex;
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 10px;
+
+    &_modal {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 
   .form-info__txt {
     font-size: 18px;
-
-    &_modal {
-      font-size: 12px;
-    }
   }
 
   .form-info__input {
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 22px;
 
     &_modal {
-      margin-bottom: 5px;
-      font-size: 15px;
-    }
-  }
-
-  .form-info__message {
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 85%;
-
-    &_modal {
-      font-size: 15px;
-      height: 70px;
+      margin-bottom: 3px;
+      font-size: 18px;
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
   }
 
@@ -1555,7 +1524,7 @@ display: flex;
   }
 
    &_modal {
-     font-size: 15px;
+     font-size: 20px;
    }
 
     &_subtitle {
@@ -1598,11 +1567,6 @@ display: flex;
   .modal-form {
     margin-top: 10px;
   }
-
-  .form-info_modal {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 
 @media (max-width: 916px) {
@@ -1617,15 +1581,18 @@ display: flex;
 
   .form-info__input {
     font-size: 20px;
+
+    &_modal {
+      font-size: 18px;
+    }
   }
 
-  .form-info__message {
-    font-size: 20px;
-    width: 84%;
+  .form-info__input_modal-message {
+    height: 85px;
   }
 
-  .form-info__message_modal {
-    height: 55px;
+  .form-info__txt_modal {
+    font-size: 17px;
   }
 
   .result__txt {
@@ -1676,9 +1643,6 @@ display: flex;
     width: 190px;
   }
 
-  .title_modal {
-      font-size: 15px;
-    }
 
   .contacts-form__tg {
     font-size: 18px;
@@ -1704,19 +1668,8 @@ display: flex;
 
   .modal-form {
     width: 40%;
-
   }
 
-  .form-info__input_modal {
-    width: 95%;
-    font-size: 14px;
-  }
-
-  .form-info__message_modal {
-    height: 80px;
-    width: 78%;
-    font-size: 14px;
-  }
 
   .btn_modal {
     font-size: 10px;
@@ -1761,9 +1714,6 @@ display: flex;
     font-size: 14px;
   }
 
-  .title_modal {
-    font-size: 15px;
-  }
 
   .contacts-links {
     width: 35%;
@@ -1872,27 +1822,30 @@ display: flex;
    width: 20px;
  }
 
- .title_modal {
-   font-size: 12px;
- }
-
-  .form-info__input_modal {
-    font-size: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .form-info__message_modal {
-    font-size: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 50px;
-  }
-
-
- .btn_modal {
+  .btn_modal {
    font-size: 8px;
  }
+
+  .form-info_modal {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .title_modal {
+    font-size: 18px;
+  }
+
+  .form-info__txt_modal {
+    font-size: 16px;
+  }
+
+  .form-info__input_modal {
+    font-size: 16px;
+  }
+
+  .form-info__input_textarea {
+    height: 140px;
+  }
 
   h1 {
     font-size: 43px;
@@ -1953,9 +1906,6 @@ display: flex;
     font-size: 20px;
   }
 
-  .form_contacts {
-    width: 102%;
-    }
 
 }
 
@@ -1987,9 +1937,6 @@ display: flex;
     font-size: 11px;
   }
 
- .modal-form {
-   width: 45%;
- }
 
   .btn__price {
     margin-left: 160px;
@@ -2040,30 +1987,19 @@ display: flex;
   .form-info__input {
     font-size: 20px;
     margin-bottom: 0;
-    width: 97%;
 
     &_modal {
-      font-size: 15px;
-      margin-top: 6px;
+      font-size: 16px;
     }
   }
 
-  .form-info__message {
-    font-size: 20px;
-    margin-bottom: 0;
-    width: 81%;
-
-    &_modal {
-      font-size: 15px;
-      margin-top: 6px;
-      height: 80px;
-      border-radius: 30px;
-      width: 78%;
-    }
-  }
 
   .form-info__txt {
-    font-size: 16px;
+    font-size: 18px;
+
+    &_modal {
+      font-size: 16px;
+    }
   }
 
   .btn_modal {
@@ -2121,6 +2057,7 @@ display: flex;
 
   .btn_form {
     width: 50%;
+    margin-top: 5px;
   }
 
   .form-container {
@@ -2140,16 +2077,6 @@ display: flex;
     padding-bottom: 5px;
   }
 
-  .form-info__message_modal {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 70px;
-    width: 80%;
-  }
-
-  .form-info__txt_modal {
-    font-size: 11px;
-  }
 
   .form-info__input_modal {
     padding-top: 10px;
@@ -2185,7 +2112,7 @@ display: flex;
   .title {
 
     &_modal {
-      font-size: 15px;
+      font-size: 18px;
     }
 
     &_free {
@@ -2462,22 +2389,10 @@ display: flex;
   }
 
   .form-info__input {
-   padding-top: 8px;
-    padding-bottom: 8px;
     font-size: 18px;
 
     &_modal {
-      font-size: 15px;
-      width: 96%;
-    }
-  }
-
-  .form-info__message {
-    font-size: 18px;
-
-    &_modal {
-      font-size: 15px;
-      height: 70px;
+      font-size: 16px;
     }
   }
 
@@ -2661,10 +2576,6 @@ display: flex;
    width: 80%;
  }
 
-  .form-info__input_modal {
-      width: 97%;
-  }
-
   .btn_form {
     width: 43%;
   }
@@ -2724,9 +2635,6 @@ display: flex;
     width: 50%;
   }
 
-  .title_modal {
-    font-size: 18px;
-  }
 
 }
 
@@ -2764,10 +2672,6 @@ display: flex;
     height: 60px;
   }
 
- .title_modal {
-   font-size: 16px;
- }
-
  .modal-form {
    padding-top: 5px;
    margin-top: 10px;
@@ -2776,24 +2680,12 @@ display: flex;
   .form-info__input_modal {
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 14px;
-  }
-
-  .form-info__message_modal {
-    height: 60px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 14px;
   }
 
   .btn_modal {
-    font-size: 8px;
+    font-size: 10px;
     width: 45%;
   }
-
-  .form-info__txt_modal {
-      font-size: 10px;
-    }
 
   .price {
     height: 270px;
@@ -2922,24 +2814,6 @@ display: flex;
       font-size: 15px;
   }
 
-  .title_modal {
-      font-size: 18px;
-  }
-
-  .form-info__input_modal {
-      font-size: 15px;
-    }
-
-
-  .form-info__message_modal {
-      font-size: 15px;
-    height: 70px;
-    width: 80%;
-  }
-
-  .btn_modal {
-    font-size: 10px;
-  }
 
   .menu__link_footer {
     font-size: 11px;
@@ -2996,43 +2870,19 @@ display: flex;
   }
 
   .title_modal {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .form-info__txt_modal {
-    font-size: 12px;
     margin-bottom: 3px;
   }
-
-  .form-info__data_modal {
-    font-size: 12px;
-    }
 
   .form-info__input_modal {
     margin-top: 3px;
     margin-bottom: 3px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
-  .form-info__input {
-    width: 100%;
-  }
-
-  .form-info__message {
-    width: 83%;
-  }
-
-  .form-info__message_modal {
-    font-size: 13px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    width: 78%;
-  }
-
-
-  .btn_modal {
-    font-size: 8px;
-  }
 
   .logo__main {
     font-size: 28px;
@@ -3157,6 +3007,7 @@ display: flex;
   .price__bonus {
     font-size: 14px;
   }
+
   .btn__price {
    width: 35%;
     margin-left: 105px;
@@ -3186,7 +3037,7 @@ display: flex;
   }
 
   .modal-form {
-    width: 70%;
+    width: 60%;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -3247,11 +3098,9 @@ display: flex;
     font-size: 20px;
   }
 
-
   .person__text {
     font-size: 17px;
     margin-bottom: 10px;
-
   }
 
   .btn {
@@ -3324,7 +3173,6 @@ overflow: hidden;
     width: 55%;
   }
 
-
   .card__img {
     width: 160px;
     height: 110px;
@@ -3393,10 +3241,6 @@ overflow: hidden;
     background-image: none;
   }
 
-  .form-group_modal {
-    width: 85%;
-  }
-
   .form-info {
     padding-right: 30px;
     padding-left: 30px;
@@ -3405,10 +3249,6 @@ overflow: hidden;
       padding-left: 15px;
       padding-right: 15px;
     }
-  }
-
-  .form-info__message {
-    width: 82%;
   }
 
   .form_free {
@@ -3472,23 +3312,8 @@ overflow: hidden;
       font-size: 18px;
     }
 
-
-  .form-info__input {
-    width: 100%;
-
-    &_modal {
-      font-size: 15px;
-      width: 85%;
-    }
-  }
-
-  .form-info__message {
-   height: 80px;
-
-    &_modal {
-      font-size: 15px;
-      width: 71%;
-    }
+  .form-info__txt {
+    font-size: 16px;
   }
 
   .contacts-links__txt {
@@ -3632,8 +3457,7 @@ overflow: hidden;
     font-size: 15px;
   }
 
-
- .flip-container {
+  .flip-container {
    height: 180px;
    width: 100%;
  }
@@ -3708,7 +3532,7 @@ margin-top: -10px;
   }
 
   .form_free {
-  width: 85%;
+  width: 90%;
 }
 
   .form-container {
@@ -3923,29 +3747,14 @@ margin-top: -10px;
     font-size: 18px;
   }
 
-  .form_free {
-    width: 87%;
-  }
 
   .contacts-form__tg {
     font-size: 15px;
   }
 
-  .form-info__txt {
-
-    &_contacts {
+  .form-info__txt_contacts {
       width: 60%;
     }
-
-    &_modal {
-      font-size: 14px;
-      width: 88%;
-    }
-  }
-
-  .form-group_modal {
-    margin-top: 5px;
-  }
 
   .btn_form {
     width: 45%;
@@ -3996,18 +3805,15 @@ margin-top: -10px;
     font-size: 18px;
   }
 
-
   .btn_form {
     width: 47%;
-  }
-
-  .form-info__txt_modal {
-    width: 83%;
   }
 
   .form-info__txt_contacts {
     width: 100%;
   }
+
+
 }
 
 @media (max-width: 390px) {
@@ -4114,20 +3920,6 @@ margin-top: -10px;
     padding-bottom: 10px;
   }
 
-  .form-info__txt_modal {
-      width: 51%;
-      font-size: 15px;
-  }
-
-  .form-info__input_modal {
-    width: 90%;
-  }
-
-  .form-info__message_modal {
-
-    width: 71%;
-      height: 60px;
-  }
 
   .btn_modal {
     font-size: 9px;
@@ -4141,7 +3933,6 @@ margin-top: -10px;
   .review {
     margin-top: 10px;
   }
-
 
   .contacts-data__img {
     width: 75%;
@@ -4280,9 +4071,6 @@ margin-top: -10px;
    text-align: center;
   }
 
-  .form-info__message {
-    width: 80%;
-  }
 
   .review__photo {
     width: 145px;
@@ -4319,6 +4107,10 @@ margin-top: -10px;
 
   .form_contacts {
     width: 95%;
+  }
+
+  .form-info__input_textarea {
+    height: 120px;
   }
 
 }
@@ -4401,7 +4193,6 @@ margin-top: -10px;
     margin-bottom: 2px;
   }
 
-
   .result__txt {
     font-size: 9px;
   }
@@ -4413,7 +4204,6 @@ margin-top: -10px;
   h4 {
     font-size: 11px;
   }
-
 
   .btn__price {
     margin-left: 44px;
@@ -4453,29 +4243,6 @@ margin-top: -10px;
     width: 98%;
   }
 
-  .form-info__input {
-
-  width: 97%;
-
-  &_modal {
-    width: 90%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-}
-
-  .form-info__message {
-    width: 78%;
-    height: 100px;
-
-    &_modal {
-      width: 71%;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      height: 70px;
-    }
-  }
-
   .review__photo {
     width: 130px;
   }
@@ -4489,7 +4256,7 @@ margin-top: -10px;
   }
 
   .form-info__txt_contacts {
-    width: 90%;
+    width: 75%;
   }
 
   .title_form {
@@ -4511,7 +4278,6 @@ margin-top: -10px;
   .footer__copyright {
     font-size: 16px;
   }
-
 
   .card, .card-back, .flip-container {
     padding-top: 5px;
@@ -4564,7 +4330,6 @@ margin-top: -10px;
     font-size: 11px;
   }
 
-
   .btn__price {
     width: 47%;
     margin-left: 33px;
@@ -4583,18 +4348,6 @@ margin-top: -10px;
   }
 
 
-  .form-info__input {
-    width: 100%;
-  }
-
-  .form-info__message {
-    width: 79%;
-
-    &_modal {
-      width: 78%;
-    }
-  }
-
   .contacts-form {
     width: 102%;
   }
@@ -4605,6 +4358,10 @@ margin-top: -10px;
 
   .btn_modal {
     width: 50%;
+  }
+
+  .form-info__txt_modal {
+    font-size: 14px;
   }
 }
 
