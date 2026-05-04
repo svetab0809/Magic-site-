@@ -68,7 +68,11 @@ const priceSlider = new Swiper ('.price-container', {
 
         344: {slidesPerView:1},
         1180: {slidesPerView:2, spaceBetween: 80, loop: true,},
-    }
+    },
+
+    autoplay: {
+        delay: 3000,
+    },
 
 })
 
@@ -92,7 +96,11 @@ const reviewsSlider = new Swiper (".reviews", {
         1440: {spaceBetween: 120},
         768: {spaceBetween: 100},
         540: {spaceBetween: 50},
-    }
+    },
+
+    autoplay: {
+        delay: 3000,
+    },
 });
 
 
