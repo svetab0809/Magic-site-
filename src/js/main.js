@@ -14,6 +14,7 @@ const modalWindow = document.querySelector('[data-modal]');
 for (let button of btnOpenModal) {
     button.addEventListener('click', () => {
         modalToggle(modalWindow, 'block');
+        ym(109042462,'reachGoal','clickToButton')
     });
 }
 
@@ -119,6 +120,8 @@ for (let form of forms) {
         if (modalWindowForm.style.display === 'block') {
             modalWindowForm.style.display = 'none'
         }
+
+        ym(109042462,'reachGoal','sendForm')
 
         fetch('/php/mail.php', {
             method: 'POST',
