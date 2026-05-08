@@ -9,7 +9,7 @@ function modalToggle(elem, displayValue) {
 }
 
 const btnOpenModal = document.querySelectorAll('[data-show-modal]');
-const modalWindow = document.querySelector('[data-modal]');
+const modalWindow = document.querySelector('[data-modal]
 
 for (let button of btnOpenModal) {
     button.addEventListener('click', () => {
