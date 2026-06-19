@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <title>Гадание на картах таро на отношения в Пензе</title>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -530,6 +530,11 @@
                 <input type="tel" placeholder="Номер телефона*" required class="form-info__input" name="phone" id="phone" autocomplete="tel" >
                 <input type="email" placeholder="Ваш e-mail" required class="form-info__input" name="email" id="email" autocomplete="email">
                     <textarea placeholder="Ваш вопрос" class="form-info__input form-info__input_textarea" name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="consent" required class="form__checkbox">
+                    <span>Я даю согласие на <a href="/doc/consent to the processing of personal data.pdf">обработку персональных данных</a> в соответствии с
+            <a href="/doc/privacy policy.pdf" target="_blank">Политикой конфиденциальности</a></span>
+                </div>
             </div>
             <input type="submit" class="btn btn_form" value="ЗАДАТЬ ВОПРОС">
         </form>
@@ -932,6 +937,11 @@
                     <input type="tel" placeholder="Номер телефона*" required class="form-info__input" name="phone" id="user-phone" autocomplete="tel">
                     <input type="email" placeholder="Ваш e-mail" required class="form-info__input" name="email" id="user-email" autocomplete="email">
                     <textarea class="form-info__input form-info__input_textarea" placeholder="Комментарий" name="message" id="user-message" cols="30" rows="10"></textarea>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" name="consent" required class="form__checkbox">
+                    <span>Я даю согласие на <a href="/doc/consent to the processing of personal data.pdf">обработку персональных данных</a> в соответствии с
+            <a href="/doc/privacy policy.pdf" target="_blank">Политикой конфиденциальности</a></span>
+                </div>
             </div>
             <input type="submit" class="btn btn_form" value="НАПИСАТЬ ТАРОЛОГУ">
         </form>
@@ -954,6 +964,11 @@
                 <input type="tel" required class="form-info__input form-info__input_modal" name="phone" id="person-phone" autocomplete="tel" placeholder="Ваш телефон*">
             <input type="email" required class="form-info__input form-info__input_modal" name="email" id="person-email" autocomplete="email" placeholder="Ваш e-mail">
                 <textarea class="form-info__input form-info__input_modal form-info__input_modal-message" name="message" id="person-message" cols="30" rows="10" placeholder="Комментарий"></textarea>
+            <div class="checkbox-wrap checkbox-wrap_modal">
+                <input type="checkbox" name="consent" required class="form__checkbox form__checkbox_modal">
+                <span>Я даю согласие на <a href="/doc/consent to the processing of personal data.pdf">обработку персональных данных</a> в соответствии с
+            <a href="/doc/privacy policy.pdf" target="_blank">Политикой конфиденциальности</a></span>
+            </div>
         </div>
         <input type="submit" class="btn btn_form btn_modal" value="НАПИСАТЬ ТАРОЛОГУ" >
     </form>

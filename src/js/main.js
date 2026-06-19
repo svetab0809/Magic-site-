@@ -109,9 +109,7 @@ burgerMenu.addEventListener ('click', () => {
 
 });
 
-menuExit.addEventListener('click', () => {
-    mobileMenu.style.height = '0%'
-});
+
 
 const forms = document.querySelectorAll('form')
 const loader = document.querySelector('.loader-wrap')
